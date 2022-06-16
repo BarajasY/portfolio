@@ -1,0 +1,21 @@
+.navbar_container {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    background: rgb(25, 25, 25);
+    border-bottom: 2px solid white;
+    position: fixed;
+    justify-content: center;
+}
+
+.test {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    display: flex;
+}
+
+.navbar_text {
+    margin: 0px 10px;
+    cursor: pointer;
+}

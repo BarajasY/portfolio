@@ -1,0 +1,29 @@
+.introduction_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: rgb(25, 25, 25);
+}
+
+.intro_text {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    flex-direction: column;
+    user-select: none;
+}
+
+.intro_text h1 {
+    font-size: 60px;
+    font-weight: 200;
+    font-family: 'Roboto';
+}
+
+.intro_text span {
+    font-size: 50px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
