@@ -16,6 +16,7 @@ code {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -30,5 +31,4 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background: gray;
-  border-radius: 5px;
 }

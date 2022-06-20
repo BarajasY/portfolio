@@ -1,6 +1,6 @@
 .about_container {
     width: 100vw;
-    height: 200px;
+    max-width: 100%;
     background: rgb(25, 25, 25);
     display: flex;
     justify-content: center;
@@ -8,7 +8,37 @@
 
 .about_content {
     display: flex;
+    align-items: center;
     flex-direction: column;
+    transition: 2.5s;
+    height: 300px;
+}
+
+.about_content.active {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 2.5s;
+    height: 900px;
+}
+
+.about_content.active h1 {
+    color: white;
+}
+
+.about_text {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    flex-direction: column;
+}
+
+.about_text h1 {
+    margin: 5px 0px;
+    font-weight: 200;
 }
 
 button {
@@ -29,6 +59,19 @@ button:hover {
     color: rgb(25, 25, 25);
 }
 
-.about_content h1 {
+.contact_section {
+    margin-top: 20px;
     color: white;
+    font-size: 80px;
+}
+
+.icons {
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.icons:hover {
+    opacity: 0.3;
 }
