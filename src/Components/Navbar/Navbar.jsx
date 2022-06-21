@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className="navbar_content">
                 <div className="test">
                     <div className="navbar_text" id="about">
-                        <h1><Link to="about_container" spy={true} smooth={true} offset={-450} duration={500}>About</Link></h1>
+                        <h1><Link to="about_container" spy={true} smooth={true} offset={-100} duration={500}>About</Link></h1>
                     </div>
                     <div className="navbar_text" id="projects">
                         <h1><Link to="projects_container" spy={true} smooth={true} offset={100} duration={500}>Projects</Link></h1>

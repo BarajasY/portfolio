@@ -1,32 +1,34 @@
 .projects_container {
     width: 100vw;
-    height: 1200px;
+    height: fit-content;
     max-width: 100%;
     background: rgb(25, 25, 25);
     display: flex;
     justify-content: center;
+    flex-direction: column;
     z-index: 10;
 }
 
-.project h1 {
+.projects_header {
     display: flex;
     color: white;
     font-family: 'Montserrat';
-    font-size: 50px;
+    font-size: 40px;
     justify-content: center;
 }
 
-.project {
+.projects {
     background: rgb(25, 25, 25);
     width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .test_project {
-    margin-top: 60px;
+    margin: 60px;
     width: 800px;
     height: 900px;
     background: rgb(21, 21, 21);
@@ -47,6 +49,7 @@
 }
 
 .project_title h1 {
+    color: white;
     margin-top: 10px;
     font-size: 30px;
     font-weight: 200;
