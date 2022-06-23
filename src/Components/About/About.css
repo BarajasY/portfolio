@@ -11,18 +11,7 @@
     align-items: center;
     flex-direction: column;
     transition: 2.5s;
-    height: 300px;
-}
-
-.about_content.active {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    transition: 2.5s;
     height: 900px;
-}
-
-.about_content.active h1 {
     color: white;
 }
 
@@ -74,4 +63,20 @@ button:hover {
 
 .icons:hover {
     opacity: 0.3;
+}
+
+@media only screen and (max-width: 992px) {
+    .about_text {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .about_text {
+        font-size: 12px;
+    }
+
+    .about_content {
+        height: 1000px;
+    }
 }
