@@ -14,6 +14,9 @@ const Navbar = () => {
                     <div className="navbar_text" id="projects">
                         <h1><Link to="projects_container" spy={true} smooth={true} offset={100} duration={500}>Projects</Link></h1>
                     </div>
+                    <div className="navbar_text" id="Contact">
+                        <h1><Link to="contact_container" spy={true} smooth={true} offset={100} duration={500}>Contact</Link></h1>
+                    </div>
                 </div>
             </div>
         </div >
