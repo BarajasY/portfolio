@@ -1,6 +1,8 @@
+import React from 'react';
 import { Introduction, Navbar, About, Projects, Contact } from './Components/index';
 
 function App() {
+
   return (
     <div className="App">
       <Navbar />

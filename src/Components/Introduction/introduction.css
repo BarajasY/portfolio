@@ -4,28 +4,37 @@
     max-width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     background: rgb(25, 25, 25);
 }
 
 .intro_text {
     color: white;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat';
     flex-direction: column;
     user-select: none;
-    margin: 0px 40px;
 }
 
 .intro_text h1 {
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 200;
     font-family: 'Montserrat';
     color: rgb(95, 208, 182)
 }
 
+#name {
+    position: relative;
+}
+
+#typed {
+    position: relative;
+}
+
 .intro_text span {
-    font-size: 50px;
+    font-size: 40px;
     padding-bottom: 5px;
 }

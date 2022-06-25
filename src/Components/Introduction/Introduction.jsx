@@ -1,19 +1,20 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './introduction.css';
 import Typed from 'react-typed';
-import { gsap } from 'gsap'
 
 const Header = () => {
+    const [OffsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.pageYOffset);
 
-    const boxRef = useRef();
     useEffect(() => {
-        gsap.from(boxRef.current, { duration: 5, opacity: 0 })
-        gsap.to(boxRef.current, { duration: 5, opacity: 10 })
-    });
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
     return (
         <div className="introduction_container">
-            <div className="intro_text" id="intro" ref={boxRef}>
+            <div className="intro_text" style={{ transform: `translateX(${-OffsetY * .3}px)` }}>
                 <h1>Yahir Moreno B.</h1>
                 <Typed
                     strings={[
@@ -21,7 +22,7 @@ const Header = () => {
                     ]}
                     typeSpeed={70}
                     backSpeed={100}
-                >
+                    id="typed">
                 </Typed >
             </div>
         </div >

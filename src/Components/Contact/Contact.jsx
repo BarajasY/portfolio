@@ -50,13 +50,13 @@ const Contact = () => {
                 <h1>Say hello</h1>
             </div>
             <div className="forms">
-                <div classname="individual_form">
+                <div className="individual_form">
                     <input value={Name} placeholder="Your name" type="text" required className="form_name" onChange={e => setName(e.target.value)} />
                 </div>
-                <div classname="individual_form">
+                <div className="individual_form">
                     <input value={Email} placeholder="Email" type="email" required className="form_name" onChange={e => setEmail(e.target.value)} />
                 </div>
-                <div classname="individual_form">
+                <div className="individual_form">
                     <textarea value={Message} className="form_text" placeholder="Message" onChange={e => setMessage(e.target.value)}></textarea>
                 </div>
                 <div>

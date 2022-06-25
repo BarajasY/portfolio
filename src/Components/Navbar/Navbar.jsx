@@ -1,9 +1,8 @@
 import React from 'react';
 import './Navbar.css';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
-
     return (
         <div className="navbar_container">
             <div className="navbar_content">
