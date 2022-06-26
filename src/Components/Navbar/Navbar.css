@@ -5,6 +5,7 @@
     position: fixed;
     display: flex;
     justify-content: center;
+    z-index: 10;
 }
 
 .navbar_content {
@@ -37,4 +38,18 @@
 
 .navbar_text h1 {
     font-weight: 200;
+}
+
+.circle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(95, 208, 182);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+    #mouse {
+        display: none;
+    }
 }

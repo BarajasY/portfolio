@@ -14,7 +14,7 @@ const Header = () => {
 
     return (
         <div className="introduction_container">
-            <div className="intro_text" style={{ transform: `translateX(${-OffsetY * .3}px)` }}>
+            <div className="intro_text" style={{ transform: `translateY(${-OffsetY * .3}px)` }}>
                 <h1>Yahir Moreno B.</h1>
                 <Typed
                     strings={[

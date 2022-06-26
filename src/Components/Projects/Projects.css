@@ -36,6 +36,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .test_project img {
@@ -81,5 +82,29 @@
     .test_project {
         width: 600px;
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .test_project {
+        width: 550px;
+    }
+
+    .image {
+        width: 500px;
+    }
+
+    .page_buttons {
+        width: 200px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .project_description {
+        width: 450px;
+    }
+
+    .description_text {
+        font-size: 15px;
     }
 }

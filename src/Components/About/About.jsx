@@ -20,7 +20,7 @@ const About = () => {
 
     return (
         <div className="about_container">
-            <div className="about_content" style={{ transform: `TranslateY(${Move * .1}px)` }}>
+            <div className="about_content" style={{ transform: `TranslateY(${-Move * .2}px)` }}>
                 <div className="about_text">
                     <h1>My name is Yahir Moreno Barajas, i'am a 19 year old Mexican web developer looking for opportunities to improve my knowledge in the field.</h1>
                     <h1>My interest started about 18 months ago when i took the python programming language, i mainly wanted to become a data scientist, i even learned Pandas/Seaborn/Jpt notebooks...</h1>
