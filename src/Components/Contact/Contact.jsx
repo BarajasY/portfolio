@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Contact.css';
 import emailjs from 'emailjs-com';
 
@@ -7,6 +7,17 @@ const Contact = () => {
     const [Email, setEmail] = useState('');
     const [Message, setMessage] = useState('');
     const [Submitted, setSubmitted] = useState(false);
+    const [Movement, setMovement] = useState(0);
+
+    const handleMovement = () => {
+        setMovement(window.scrollY);
+    }
+
+    useEffect(() => {
+        document.addEventListener('scroll', handleMovement);
+
+        return () => document.removeEventListener('scroll', handleMovement);
+    })
 
     if (Submitted) {
         return (
@@ -46,21 +57,23 @@ const Contact = () => {
 
     return (
         <div className="contact_container">
-            <div className="contact_header">
-                <h1>Say hello</h1>
-            </div>
-            <div className="forms">
-                <div className="individual_form">
-                    <input value={Name} placeholder="Your name" type="text" required className="form_name" onChange={e => setName(e.target.value)} />
+            <div className="contact_content" style={{ transform: `translateY(${-Movement * .15}px)` }}>
+                <div className="contact_header">
+                    <h1>Say hello</h1>
                 </div>
-                <div className="individual_form">
-                    <input value={Email} placeholder="Email" type="email" required className="form_name" onChange={e => setEmail(e.target.value)} />
-                </div>
-                <div className="individual_form">
-                    <textarea value={Message} className="form_text" placeholder="Message" onChange={e => setMessage(e.target.value)}></textarea>
-                </div>
-                <div>
-                    <button onClick={Submit} className="form_submit">Submit</button>
+                <div className="forms">
+                    <div className="individual_form">
+                        <input value={Name} placeholder="Your name" type="text" required className="form_name" onChange={e => setName(e.target.value)} />
+                    </div>
+                    <div className="individual_form">
+                        <input value={Email} placeholder="Email" type="email" required className="form_name" onChange={e => setEmail(e.target.value)} />
+                    </div>
+                    <div className="individual_form">
+                        <textarea value={Message} className="form_text" placeholder="Message" onChange={e => setMessage(e.target.value)}></textarea>
+                    </div>
+                    <div>
+                        <button onClick={Submit} className="form_submit">Submit</button>
+                    </div>
                 </div>
             </div>
         </div >
