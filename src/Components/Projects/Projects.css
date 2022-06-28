@@ -87,11 +87,12 @@
 
 @media only screen and (max-width: 600px) {
     .test_project {
-        width: 550px;
+        width: 100%;
+        margin: 0px;
     }
 
     .image {
-        width: 500px;
+        width: 90%;
     }
 
     .page_buttons {
@@ -101,7 +102,7 @@
     }
 
     .project_description {
-        width: 450px;
+        width: 95%;
     }
 
     .description_text {

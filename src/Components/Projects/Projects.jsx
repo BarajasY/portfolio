@@ -30,7 +30,7 @@ const Projects = () => {
                     <h1>Projects</h1>
                 </div>
                 <div className="projects">
-                    <div className="test_project" style={{ transform: `translateX(${ProyectsMotion * .01}px)` }}>
+                    <div className="test_project">
                         <img src={elantra_mockup} alt="elantra" className="image" />
                         <div className="buttons">
                             <a href="https://elantra-mockup2.netlify.app/" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
@@ -55,9 +55,7 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="test_project" style={{
-                        transform: `translateX(${-ProyectsMotion * .01}px)`
-                    }}>
+                    <div className="test_project">
                         <img src={RAM_API} alt="Rick_morty" className="image" />
                         <div className="buttons">
                             <a href="https://rickandmortyapi-test.netlify.app/" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
@@ -83,7 +81,7 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="test_project" style={{ transform: `translateX(${ProyectsMotion * .005}px)` }}>
+                    <div className="test_project" >
                         <img src={portfolio_page} alt="portfolio" className="image" />
                         <div className="buttons">
                             <a href="https://yahirmb-portfolio.netlify.app/" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
