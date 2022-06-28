@@ -1,7 +1,7 @@
 .contact_container {
     width: 100%;
     min-width: 100%;
-    height: 100vh;
+    height: 40vh;
     background: rgb(25, 25, 25)
 }
 
@@ -20,11 +20,17 @@
     margin-top: 8%;
 }
 
+.individual_form {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
 .form_name {
     margin-bottom: 20px;
     height: 30px;
     color: white;
-    width: 500px;
+    width: 60%;
     background: rgb(20, 20, 20);
     border: none;
     font-size: 20px;
@@ -34,7 +40,7 @@
     height: 150px;
     color: white;
     height: px;
-    width: 500px;
+    width: 60%;
     background: rgb(20, 20, 20);
     border: none;
     resize: none;
