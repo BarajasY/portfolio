@@ -62,8 +62,8 @@
 }
 
 .project_description {
-    margin-top: 10px;
-    width: 700px;
+    padding: 10px 10px;
+    width: 100%;
 }
 
 .description_icons {
