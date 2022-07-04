@@ -49,7 +49,6 @@
     border-radius: 15px;
 }
 
-
 @media only screen and (max-width: 991px) {
     #mouse {
         display: none;
