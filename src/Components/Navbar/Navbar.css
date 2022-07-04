@@ -44,7 +44,8 @@
     position: relative;
     width: 25px;
     height: 25px;
-    background-color: rgb(95, 208, 182);
+    background-color: none;
+    border: 2px solid rgb(95, 208, 182);
     border-radius: 15px;
 }
 
