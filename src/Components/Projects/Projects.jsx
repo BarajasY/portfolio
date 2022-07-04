@@ -146,7 +146,7 @@ const Projects = () => {
                         </div>
                         <div className="project_description">
                             <div className="description_text">
-                                <p>First project where i manage to use a database. In this case it is a classic blog webpage in which you can login and logout with google, create posts and delete posts.</p>
+                                <p>First project where i manage to use a database. In this case it is a classic blog webpage in which you can login and logout with google, create/delete posts and even edit them!</p>
                                 <p>For this project i used:</p>
                                 <li>React, Javascript, CSS and HTML.</li>
                                 <li>Firebase to work as an authenticator and as a database.</li>
