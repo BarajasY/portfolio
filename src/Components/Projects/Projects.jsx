@@ -171,7 +171,7 @@ const Projects = () => {
                     <div className="test_project" >
                         <img src={astrobuyer_page} alt="astrobuyer page" className="image" />
                         <div className="buttons">
-                            <a href="https://yahirmb-blog.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
+                            <a href="https://astrobuyer.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
                             <a href="https://github.com/Kanomb/astrobuyer" target="_blank" rel="noreferrer"><button className="page_buttons">Source code</button></a>
                         </div>
                         <div className="project_title">
