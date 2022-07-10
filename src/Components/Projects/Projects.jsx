@@ -41,6 +41,7 @@ const Projects = () => {
                         </div>
                         <div className="project_title">
                             <h1>Elantra webpage mockup</h1>
+                            <p>80% Responsive</p>
                         </div>
                         <div className="project_description">
                             <div className="description_text">
@@ -66,6 +67,7 @@ const Projects = () => {
                         </div>
                         <div className="project_title">
                             <h1>Rick and Morty API</h1>
+                            <p>100% Responsive</p>
                         </div>
                         <div className="project_description">
                             <div className="description_text">
@@ -92,6 +94,7 @@ const Projects = () => {
                         </div>
                         <div className="project_title">
                             <h1>Personal Portfolio</h1>
+                            <p>95% Responsive</p>
                         </div>
                         <div className="project_description">
                             <div className="description_text">
@@ -117,6 +120,7 @@ const Projects = () => {
                         </div>
                         <div className="project_title">
                             <h1>Yanagiya.mx Clone Website</h1>
+                            <p>100% Responsive</p>
                         </div>
                         <div className="project_description">
                             <div className="description_text">
@@ -143,6 +147,7 @@ const Projects = () => {
                         </div>
                         <div className="project_title">
                             <h1>Blog website</h1>
+                            <p>100% Responsive</p>
                         </div>
                         <div className="project_description">
                             <div className="description_text">

@@ -16,14 +16,19 @@ const Header = () => {
         <div className="introduction_container">
             <div className="intro_text" style={{ transform: `translateY(${-OffsetY * .3}px)` }}>
                 <h1>Yahir Moreno B.</h1>
-                <Typed
-                    strings={[
-                        "an aspiring self-taught frontend developer based in México"
-                    ]}
-                    typeSpeed={70}
-                    backSpeed={100}
-                    id="typed">
-                </Typed >
+                <p>Mexican self-taught frontend
+                    <Typed
+                        strings={[
+                            "developer",
+                            "student",
+                            "enthusiast"
+                        ]}
+                        typeSpeed={100}
+                        backSpeed={100}
+                        id="typed"
+                        loop>
+                    </Typed >
+                </p>
             </div>
         </div >
     )

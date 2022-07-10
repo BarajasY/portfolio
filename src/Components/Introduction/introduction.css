@@ -27,15 +27,14 @@
     color: rgb(95, 208, 182)
 }
 
-#name {
-    position: relative;
-}
-
-#typed {
-    position: relative;
+.intro_text p {
+    font-size: 40px;
+    text-align: center;
 }
 
 .intro_text span {
+    color: rgb(95, 208, 182);
+    margin-left: 5px;
     font-size: 40px;
     padding-bottom: 5px;
     text-align: center;
@@ -44,6 +43,11 @@
 @media only screen and (max-width: 600px) {
     .intro_text h1 {
         font-size: 40px;
+    }
+
+    .intro_text p {
+        width: 300px;
+        font-size: 30px;
     }
 
     .intro_text span {
