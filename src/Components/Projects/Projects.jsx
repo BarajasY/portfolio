@@ -14,7 +14,7 @@ import { SiFirebase } from 'react-icons/si';
 const Projects = () => {
 
     const [ProyectsMotion, setProyectsMotion] = useState(0)
-    /*     const device_width = window.screen.width; */
+
     const handleMotion = () => {
         setProyectsMotion(window.scrollY);
     }

@@ -70,7 +70,7 @@
 
 .project_description {
     padding: 10px 10px;
-    width: 100%;
+    width: 90%;
 }
 
 .description_icons {
@@ -101,7 +101,7 @@
 @media only screen and (max-width: 600px) {
     .test_project {
         width: 100%;
-        margin: 0px;
+        margin: 30px 0px;
     }
 
     .image {
