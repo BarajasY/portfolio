@@ -15,14 +15,13 @@
 
 .test {
     color: white;
-    width: 95%;
+    width: 90%;
     font-family: 'Poppins';
     font-size: 15px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-    margin-left: 1px;
 }
 
 .test a {
@@ -30,7 +29,7 @@
 }
 
 .navbar_text {
-    width: 200px;
+    width: 150px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -65,5 +64,6 @@
 
     .test {
         font-size: 10px;
+        justify-content: center;
     }
 }

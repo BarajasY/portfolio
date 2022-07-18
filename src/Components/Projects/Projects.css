@@ -21,6 +21,11 @@
     font-weight: 400;
 }
 
+.projects_header p {
+    font-size: 15px;
+    text-align: center;
+}
+
 .projects {
     background: rgb(25, 25, 25);
     width: 100%;
@@ -43,6 +48,7 @@
     background: rgb(15, 15, 15);
     border-radius: 10px;
     transition: .5s;
+    cursor: pointer;
 }
 
 .test_project:hover {
@@ -107,7 +113,7 @@
 
 @media only screen and (max-width: 600px) {
     .test_project {
-        width: 100%;
+        width: 400px;
         margin: 30px 0px;
     }
 
