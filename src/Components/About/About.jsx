@@ -1,26 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './About.css';
 import { AiFillGithub } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 const About = () => {
-
-    const [Move, setMove] = useState(0)
-    const handleMove = () => setMove(window.scrollY);
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleMove)
-
-        return () => window.removeEventListener('scroll', handleMove)
-    }, [])
+    const url = 'https://github.com/Kanomb';
 
     const githubTab = () => {
-        const url = 'https://github.com/Kanomb';
         window.open(url, '_blank')
     }
 
     return (
         <div className="about_container">
-            <div className="about_content" style={{ transform: `TranslateY(${-Move * .2}px)` }}>
+            <motion.div className="about_content" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
                 <div className="about_text">
                     <h1>My name is Yahir Moreno Barajas, i'am a 19 year old Mexican web developer looking for opportunities to improve my knowledge in the field.</h1>
                     <h1>My interest started about 18 months ago when i took the python programming language, i mainly wanted to become a data scientist, i even learned Pandas/Seaborn/Jpt notebooks...</h1>
@@ -31,7 +23,7 @@ const About = () => {
                     <AiFillGithub className="icons" onClick={githubTab} />
                     <p>My github</p>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

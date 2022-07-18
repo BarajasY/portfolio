@@ -4,37 +4,42 @@ import astrobuyer_page from '../../assets/astrobuyer_page.PNG'
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import { SiFirebase } from 'react-icons/si';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content'
 
 
 const Astrobuyer = () => {
+
+    const MySwal = withReactContent(Swal)
+
+    const ShowSwal = () => {
+        MySwal.fire(
+            <div className="alert_text">
+                <p>In this site you can login and simulate that you're buying some planets or stars. Even you can add them to your cart!.</p>
+                <p>I made this site in order to grasp more experience into databases and how to connect them with my react frontend.</p>
+                <p>Additionally thanks to this project i realized how strong the react context hook is.</p>
+                <div className="icons_section">
+                    <p>Tech used</p>
+                    <FaReact className="icons" />
+                    <FaCss3 className="icons" />
+                    <FaHtml5 className="icons" />
+                    <IoLogoJavascript className="icons" />
+                    <SiFirebase className="icons" />
+                </div>
+            </div>)
+    }
+
+
     return (
-        <div className="test_project" >
-            <img src={astrobuyer_page} alt="astrobuyer page" className="image" />
-            <div className="buttons">
-                <a href="https://astrobuyer.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
-                <a href="https://github.com/Kanomb/astrobuyer" target="_blank" rel="noreferrer"><button className="page_buttons">Source code</button></a>
-            </div>
+        <div className="test_project" onClick={ShowSwal}>
             <div className="project_title">
                 <h1>Astrobuyer website</h1>
                 <p>100% Responsive</p>
             </div>
-            <div className="project_description">
-                <div className="description_text">
-                    <p>Webpage where you can "buy" planets and take a look at their description. My first time simulating a store site!.</p>
-                    <p>You can log in and simulate that you're buying some planets.</p>
-                    <p>For this project i used:</p>
-                    <li>React, Javascript, CSS and HTML.</li>
-                    <li>Firebase auth to allow google sign up and firestore database to store all the planets/stars.</li>
-                    <li>React Context to share information about the cart between the elements of the project.</li>
-                    <li>React hooks such as useState and useEffect.</li>
-                </div>
-                <div className="description_icons">
-                    <FaReact className="icon" />
-                    <FaCss3 className="icon" />
-                    <FaHtml5 className="icon" />
-                    <IoLogoJavascript className="icon" />
-                    <SiFirebase className="icon" />
-                </div>
+            <img src={astrobuyer_page} alt="astrobuyer page" className="image" />
+            <div className="buttons">
+                <a href="https://astrobuyer.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
+                <a href="https://github.com/Kanomb/astrobuyer" target="_blank" rel="noreferrer"><button className="page_buttons">Source code</button></a>
             </div>
         </div>
     )

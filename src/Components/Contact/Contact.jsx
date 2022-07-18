@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
 import emailjs from 'emailjs-com';
 
@@ -7,17 +7,6 @@ const Contact = () => {
     const [Email, setEmail] = useState('');
     const [Message, setMessage] = useState('');
     const [Submitted, setSubmitted] = useState(false);
-    const [Movement, setMovement] = useState(0);
-
-    const handleMovement = () => {
-        setMovement(window.scrollY);
-    }
-
-    useEffect(() => {
-        document.addEventListener('scroll', handleMovement);
-
-        return () => document.removeEventListener('scroll', handleMovement);
-    })
 
     if (Submitted) {
         return (
@@ -57,7 +46,7 @@ const Contact = () => {
 
     return (
         <div className="contact_container">
-            <div className="contact_content" style={{ transform: `translateY(${-Movement * .15}px)` }}>
+            <div className="contact_content">
                 <div className="contact_header">
                     <h1>Say hello</h1>
                 </div>

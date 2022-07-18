@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Projects.css';
 import Astrobuyer from './Astrobuyer';
 import Blog from './Blog';
@@ -10,23 +10,9 @@ import Quiz from './Quiz'
 
 const Projects = () => {
 
-    const [ProyectsMotion, setProyectsMotion] = useState(0)
-
-    const handleMotion = () => {
-        setProyectsMotion(window.scrollY);
-    }
-
-    useEffect(() => {
-        document.addEventListener('scroll', handleMotion)
-
-
-        return () => document.removeEventListener('scroll', handleMotion)
-    }, [])
-
-
     return (
         <div className="projects_container">
-            <div className="proyects_content" style={{ transform: `translateY(${-ProyectsMotion * .2}px)` }}>
+            <div className="proyects_content">
                 <div className="projects_header">
                     <h1>Projects</h1>
                 </div>

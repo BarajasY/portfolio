@@ -19,14 +19,15 @@
     display: flex;
     justify-content: center;
     width: 60%;
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
     font-size: 15px;
     flex-direction: column;
+    text-align: center;
 }
 
 .about_text h1 {
     margin: 5px 0px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 button {
