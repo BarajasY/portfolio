@@ -29,7 +29,7 @@ const Portfolio = () => {
         <div className="test_project" onClick={ShowSwal}>
             <div className="project_title">
                 <h1>Personal Portfolio</h1>
-                <p>95% Responsive</p>
+                <p>100% Responsive</p>
             </div>
             <img src={portfolio_page} alt="portfolio" className="image" />
             <div className="buttons">

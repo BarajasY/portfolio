@@ -23,6 +23,12 @@
     font-size: 70px;
     margin: 20px 20px;
     color: white;
+    transition: .5s;
+}
+
+.stack_icon:hover {
+    color: rgb(95, 208, 182);
+    font-size: 80px;
 }
 
 .learning_tech {
@@ -38,6 +44,10 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .stack_container {
+        height: 800px;
+    }
+
     .used_tech {
         font-size: 20px;
     }

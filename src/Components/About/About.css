@@ -66,8 +66,12 @@ button:hover {
 .github_icon {
     margin-left: 20px;
     margin-right: 20px;
-    cursor: pointer;
     transition: .5s;
+}
+
+.github_icon:hover {
+    color: rgb(95, 208, 182);
+    font-size: 90px;
 }
 
 .icons:hover {
@@ -82,7 +86,7 @@ button:hover {
 
 @media only screen and (max-width: 991px) {
     .about_container {
-        height: 1200px;
+        height: 900px;
     }
 
     .about_text {

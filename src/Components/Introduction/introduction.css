@@ -20,11 +20,19 @@
     margin: 0px 20px;
 }
 
-.intro_text h1 {
-    font-size: 55px;
+.intro_text h1 span {
+    font-size: 100px;
     font-weight: 400;
     font-family: 'Poppins';
-    color: rgb(95, 208, 182)
+    color: rgb(95, 208, 182);
+    transition: .5s;
+    margin: 10px 10px;
+}
+
+.intro_text h1 span:hover {
+    font-size: 150px;
+    color: rgb(95, 208, 230);
+    text-shadow: 3px 3px 10px white;
 }
 
 .intro_text p {
@@ -41,8 +49,12 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .intro_text h1 {
+    .intro_text h1 span {
         font-size: 40px;
+    }
+
+    .intro_text h1 span:hover {
+        font-size: 80px;
     }
 
     .intro_text p {

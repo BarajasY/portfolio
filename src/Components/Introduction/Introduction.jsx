@@ -16,7 +16,7 @@ const Header = () => {
     return (
         <div className="introduction_container">
             <div className="intro_text" style={{ transform: `translateY(${-OffsetY * .3}px)` }}>
-                <motion.h1 animate={{ x: 0 }} initial={{ x: -2000 }} transition={{ duration: 2, type: "spring" }}>Yahir Moreno B</motion.h1>
+                <motion.h1 animate={{ x: 0 }} initial={{ x: -2000 }} transition={{ duration: 2, type: "spring" }}><span>Y</span><span>A</span><span>H</span><span>I</span><span>R</span> <span>M</span><span>B</span></motion.h1>
                 <motion.div animate={{ x: 0 }} initial={{ x: -2000 }} transition={{ duration: 2, type: "spring", delay: .2 }} >
                     <p>Mexican self-taught frontend
                         <Typed

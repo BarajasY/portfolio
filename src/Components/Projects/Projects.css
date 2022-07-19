@@ -70,6 +70,7 @@
     width: 50%;
     font-size: 20px;
     height: 40px;
+    z-index: 10
 }
 
 .project_title h1 {
@@ -77,6 +78,7 @@
     font-family: 'Poppins';
     font-size: 30px;
     font-weight: 400;
+    text-align: center;
 }
 
 .project_title p {
