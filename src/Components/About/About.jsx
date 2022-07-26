@@ -14,10 +14,11 @@ const About = () => {
         <div className="about_container">
             <motion.div className="about_content">
                 <motion.div className="about_text" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 2 }}>
-                    <h1>My name is Yahir Moreno Barajas, Mexican web developer looking for opportunities to improve my knowledge in the field.</h1>
-                    <h1>My interest started about 18 months ago when i took the python language, i mainly wanted to become a data scientist, i even learned Pandas/Seaborn/Jpt notebooks...</h1>
-                    <h1>Since i relatively knew how to use python i moved into web development after about 3 months, with django, but soon realized that Javascript is the king of languages when trying to build a website, so i started to learn it.</h1>
-                    <h1>Lastly i focused myself and realized that i wasn't going to be productive if i became first a junior backend developer, so i started to learn CSS, HTML & React to become a frontend dev and then build my knowledge up until i'm capable enough to have a Full Stack role, with enough knowledge in both sides, frontend and backend.</h1>
+                    <h1>Hello I am Yahir Moreno Barajas, a mexican web developer and software engineering university student, and you're currently looking at my portfolio!</h1>
+                    <h1>It all started a while ago when i wanted to learn Python, at that time i had in mind to become a data scientist, i even learned Pandas/Seaborn/Jpt notebooks...</h1>
+                    <h1>But then i discovered web development, and since i relatively knew how to use python i started to learn django after about 3 months, but soon realized that Javascript may be the best choice when trying to build a website, so i decided to learn it.</h1>
+                    <h1>So, since my career started with backend development using Django, that's what i wanted to become, but then i realized that backend may not be the best choice if i was just starting my career. So i started to learn frontend tools such as CSS, HTML & React to build my knowledge up.</h1>
+                    <h1>Finally i must say that i do have in mind to become a full stack developer, but for now, i'll be starting with frontend and then after a while, backend.</h1>
                 </motion.div>
                 <motion.div className="contact_section" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 2, delay: 1 }}>
                     <AiFillGithub className="github_icon" onClick={githubTab} />
