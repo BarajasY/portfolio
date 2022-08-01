@@ -26,12 +26,12 @@ const Portfolio = () => {
     }
 
     return (
-        <div className="test_project" onClick={ShowSwal}>
+        <div className="test_project" >
             <div className="project_title">
                 <h1>Personal Portfolio</h1>
                 <p>100% Responsive</p>
             </div>
-            <img src={portfolio_page} alt="portfolio" className="image" />
+            <img src={portfolio_page} alt="portfolio" className="image" onClick={ShowSwal} />
             <div className="buttons">
                 <a href="https://yahirmb-portfolio.netlify.app/" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
                 <a href="https://github.com/Kanomb/portfolio" target="_blank" rel="noreferrer"><button className="page_buttons">Source code</button></a>

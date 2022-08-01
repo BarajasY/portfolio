@@ -31,12 +31,12 @@ const Astrobuyer = () => {
 
 
     return (
-        <div className="test_project" onClick={ShowSwal}>
+        <div className="test_project">
             <div className="project_title">
                 <h1>Astrobuyer website</h1>
                 <p>100% Responsive</p>
             </div>
-            <img src={astrobuyer_page} alt="astrobuyer page" className="image" />
+            <img src={astrobuyer_page} alt="astrobuyer page" className="image" onClick={ShowSwal} />
             <div className="buttons">
                 <a href="https://astrobuyer.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
                 <a href="https://github.com/Kanomb/astrobuyer" target="_blank" rel="noreferrer"><button className="page_buttons">Source code</button></a>

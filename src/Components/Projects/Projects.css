@@ -52,7 +52,7 @@
 }
 
 .test_project:hover {
-    transform: scale(1.01)
+    transform: scale(.98)
 }
 
 .test_project img {

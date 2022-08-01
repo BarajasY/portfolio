@@ -25,12 +25,12 @@ const Yanagiya = () => {
     }
 
     return (
-        <div className="test_project" onClick={ShowSwal}>
+        <div className="test_project">
             <div className="project_title">
                 <h1>Yanagiya.mx Clone Website</h1>
                 <p>100% Responsive</p>
             </div>
-            <img src={yanagiya_page} alt="portfolio" className="image" />
+            <img src={yanagiya_page} alt="portfolio" className="image" onClick={ShowSwal} />
             <div className="buttons">
                 <a href="https://yanagiya-clone.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
                 <a href="https://github.com/Kanomb/yanagiya-clone" target="_blank" rel="noreferrer"><button className="page_buttons">Source code</button></a>

@@ -17,7 +17,7 @@ const Projects = () => {
                 <div className="projects_header">
                     <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
                         <h1>Projects</h1>
-                        <p>*Click on them*</p>
+                        <p>*Click on the image*</p>
                     </motion.div>
                 </div>
                 <div className="projects">

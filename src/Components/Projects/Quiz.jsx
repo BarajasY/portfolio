@@ -27,12 +27,12 @@ const Quiz = () => {
     }
 
     return (
-        <div className="test_project" onClick={ShowSwal}>
+        <div className="test_project">
             <div className="project_title">
                 <h1>React/Javascript Quiz</h1>
                 <p>100% Responsive</p>
             </div>
-            <img src={quiz} alt="portfolio" className="image" />
+            <img src={quiz} alt="portfolio" className="image" onClick={ShowSwal} />
             <div className="buttons">
                 <a href="https://yahirmb-quiz.netlify.app/" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
                 <a href="https://github.com/Kanomb/programming-quiz" target="_blank" rel="noreferrer"><button className="page_buttons">Source code</button></a>

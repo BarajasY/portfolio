@@ -26,12 +26,12 @@ const Rick = () => {
     }
 
     return (
-        <div className="test_project" onClick={ShowSwal}>
+        <div className="test_project">
             <div className="project_title">
                 <h1>Rick and Morty API</h1>
                 <p>100% Responsive</p>
             </div>
-            <img src={RAM_API} alt="Rick_morty" className="image" />
+            <img src={RAM_API} alt="Rick_morty" className="image" onClick={ShowSwal} />
             <div className="buttons">
                 <a href="https://rickandmortyapi-test.netlify.app/" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
                 <a href="https://github.com/Kanomb/api_101" target="_blank" rel="noreferrer"><button className="page_buttons">Source code</button></a>
