@@ -26,12 +26,10 @@
 
 .about_wrapper {
     width: 60%;
-    margin-top: 250px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: fit-content;
-    z-index: 10;
+    height: 100%;
     background: rgb(25, 25, 25);
 }
 
@@ -138,7 +136,11 @@ button:hover {
 
 @media only screen and (max-width: 600px) {
     .about_container {
-        height: 1800px;
+        height: fit-content;
+    }
+
+    .about_wrapper {
+        margin-top: 0px;
     }
 
     .about_container hr {
