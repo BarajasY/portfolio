@@ -8,10 +8,24 @@
     background: rgb(25, 25, 25);
 }
 
+.stack_container hr {
+    position: relative;
+    left: 50%;
+    height: 100%;
+}
+
 .stack_content {
     font-family: 'Poppins';
     text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.stack_wrapper {
     width: 90%;
+    z-index: 10;
+    background: rgb(25, 25, 25);
 }
 
 .used_tech {

@@ -8,6 +8,7 @@ function App() {
       <Navbar />
       <Introduction />
       <About />
+      <div className="vl"></div>
       <Stack />
       <Projects />
       <Contact />

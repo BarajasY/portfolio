@@ -1,52 +1,61 @@
 import React from 'react';
 import './Stack.css';
 import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3 } from 'react-icons/io'
-import { SiFirebase, SiBootstrap, SiReact, SiTypescript, SiExpress, SiGraphql } from 'react-icons/si';
+import { SiFirebase, SiBootstrap, SiReact, SiTypescript, SiExpress, SiGraphql, SiPostgresql, SiRedux } from 'react-icons/si';
 import { motion } from 'framer-motion';
 
 const Stack = () => {
     return (
         <div className="stack_container">
+            <hr />
             <div className="stack_content">
-                <div className="used_tech">
-                    <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
-                        <h1>Tech i've used</h1>
-                    </motion.div>
-                    <div className="wrapper">
+                <div className="stack_wrapper">
+                    <div className="used_tech">
                         <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
-                            <SiReact className="stack_icon" />
+                            <h1>Tech i've used</h1>
                         </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .2 }} viewport={{ once: true }}>
-                            <IoLogoJavascript className="stack_icon" />
-                        </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .4 }} viewport={{ once: true }}>
-                            <IoLogoHtml5 className="stack_icon" />
-                        </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .6 }} viewport={{ once: true }}>
-                            <IoLogoCss3 className="stack_icon" />
-                        </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .8 }} viewport={{ once: true }}>
-                            <SiFirebase className="stack_icon" />
-                        </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1 }} viewport={{ once: true }}>
-                            <SiBootstrap className="stack_icon" />
-                        </motion.div>
+                        <div className="wrapper">
+                            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
+                                <SiReact className="stack_icon" />
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .2 }} viewport={{ once: true }}>
+                                <IoLogoJavascript className="stack_icon" />
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .4 }} viewport={{ once: true }}>
+                                <IoLogoHtml5 className="stack_icon" />
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .6 }} viewport={{ once: true }}>
+                                <IoLogoCss3 className="stack_icon" />
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .8 }} viewport={{ once: true }}>
+                                <SiFirebase className="stack_icon" />
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1 }} viewport={{ once: true }}>
+                                <SiBootstrap className="stack_icon" />
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.2 }} viewport={{ once: true }}>
+                                <SiExpress className="stack_icon" />
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.4 }} viewport={{ once: true }}>
+                                <SiPostgresql className="stack_icon" />
+                            </motion.div>
+                        </div>
                     </div>
-                </div>
-                <div className="learning_tech">
-                    <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.2 }} viewport={{ once: true }}>
-                        <h1>Tech i'm looking forward to learn</h1>
-                    </motion.div>
-                    <div className="wrapper">
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.4 }} viewport={{ once: true }}>
-                            <SiTypescript className="stack_icon" />
+                    <div className="learning_tech">
+                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.2 }} viewport={{ once: true }}>
+                            <h1>Tech i'm looking forward to learn</h1>
                         </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.6 }} viewport={{ once: true }}>
-                            <SiExpress className="stack_icon" />
-                        </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.8 }} viewport={{ once: true }}>
-                            <SiGraphql className="stack_icon" />
-                        </motion.div>
+                        <div className="wrapper">
+                            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.4 }} viewport={{ once: true }}>
+                                <SiTypescript className="stack_icon" />
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.6 }} viewport={{ once: true }}>
+                                <SiRedux className="stack_icon" />
+                            </motion.div>
+                            <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.8 }} viewport={{ once: true }}>
+                                <SiGraphql className="stack_icon" />
+                            </motion.div>
+                        </div>
                     </div>
                 </div>
             </div>

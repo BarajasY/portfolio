@@ -8,22 +8,43 @@
     box-shadow: -5px -20px 10px rgb(25, 25, 25);
 }
 
+.about_container hr {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    height: 200px;
+}
+
 .about_content {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
     color: white;
 }
 
-.about_text {
+.about_wrapper {
+    width: 60%;
     margin-top: 250px;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    z-index: 10;
+    background: rgb(25, 25, 25);
+}
+
+.about_text {
+    display: flex;
     justify-content: center;
-    width: 60%;
+    width: 100%;
     font-family: 'Poppins';
     font-size: 15px;
     flex-direction: column;
     text-align: center;
+    z-index: 10;
+    background: rgb(25, 25, 25);
 }
 
 .about_text h1 {
@@ -57,6 +78,8 @@ button:hover {
     margin-top: 20px;
     color: white;
     font-size: 80px;
+    z-index: 10;
+    background: rgb(25, 25, 25);
 }
 
 .contact_section p {
@@ -86,11 +109,20 @@ button:hover {
 
 @media only screen and (max-width: 991px) {
     .about_container {
-        height: 900px;
+        height: fit-content;
     }
 
     .about_text {
         width: 90%;
+    }
+
+    .about_wrapper {
+        margin-top: 250px;
+        width: 100%;
+    }
+
+    .contact_section {
+        margin-bottom: 100px;
     }
 }
 
@@ -107,6 +139,10 @@ button:hover {
 @media only screen and (max-width: 600px) {
     .about_container {
         height: 1800px;
+    }
+
+    .about_container hr {
+        height: 1600px;
     }
 
     .about_text {
