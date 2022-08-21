@@ -8,6 +8,7 @@ import Rick from './Rick';
 import Yanagiya from './Yanagiya';
 import Quiz from './Quiz'
 import Pokechampions from './Pokechampions'
+import WeirdCalc from './WeirdCalc';
 import { motion } from 'framer-motion';
 
 const Projects = () => {
@@ -29,6 +30,7 @@ const Projects = () => {
                     <Astrobuyer />
                     <Quiz />
                     <Pokechampions />
+                    <WeirdCalc />
                 </div>
             </div>
         </div >
