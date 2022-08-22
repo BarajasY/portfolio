@@ -1,24 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
-import { motion, useScroll } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
-    const { scrollYProgress } = useScroll()
-    const [Progress, setProgress] = useState(0)
-
-    useEffect(() => {
-        document.addEventListener('scroll', function () {
-            setProgress(scrollYProgress.current)
-        })
-
-    }, [scrollYProgress])
-
     return (
         <div className="navbar_container">
-            <div className="progress_bar">
-                <motion.div className="fill_bar" style={{ height: Progress * 100 + '%' }}></motion.div>
-            </div>
             <div className="navbar_content">
                 <div className="test">
                     <motion.div className="navbar_text" id="about" animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1 }}>
