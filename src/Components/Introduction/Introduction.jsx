@@ -25,7 +25,7 @@ const Header = () => {
                     <motion.span animate={{ y: 0 }} initial={{ y: -50 }} transition={{ duration: .2, delay: .75 }}>M</motion.span>
                     <motion.span animate={{ y: 0 }} initial={{ y: -50 }} transition={{ duration: .2, delay: .90 }}>B</motion.span>
                 </motion.h1>
-                <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 2, delay: .2 }} >
+                <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 2, delay: 1 }} >
                     <p>Mexican self-taught frontend
                         <Typed
                             strings={[
