@@ -17,13 +17,13 @@ const Header = () => {
         <div className="introduction_container">
             <div className="intro_text" style={{ transform: `translateY(${-OffsetY * .3}px)` }}>
                 <motion.h1>
-                    <motion.span animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1 }}>Y</motion.span>
-                    <motion.span animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1, delay: .1 }}>A</motion.span>
-                    <motion.span animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1, delay: .2 }}>H</motion.span>
-                    <motion.span animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1, delay: .3 }}>I</motion.span>
-                    <motion.span animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1, delay: .4 }}>R</motion.span>
-                    <motion.span animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1, delay: .5 }}>M</motion.span>
-                    <motion.span animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1, delay: .6 }}>B</motion.span>
+                    <motion.span animate={{ y: 0 }} initial={{ y: -50 }} transition={{ duration: .2 }}>Y</motion.span>
+                    <motion.span animate={{ y: 0 }} initial={{ y: -50 }} transition={{ duration: .2, delay: .15 }}>A</motion.span>
+                    <motion.span animate={{ y: 0 }} initial={{ y: -50 }} transition={{ duration: .2, delay: .30 }}>H</motion.span>
+                    <motion.span animate={{ y: 0 }} initial={{ y: -50 }} transition={{ duration: .2, delay: .45 }}>I</motion.span>
+                    <motion.span animate={{ y: 0 }} initial={{ y: -50 }} transition={{ duration: .2, delay: .60 }}>R</motion.span>
+                    <motion.span animate={{ y: 0 }} initial={{ y: -50 }} transition={{ duration: .2, delay: .75 }}>M</motion.span>
+                    <motion.span animate={{ y: 0 }} initial={{ y: -50 }} transition={{ duration: .2, delay: .90 }}>B</motion.span>
                 </motion.h1>
                 <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 2, delay: .2 }} >
                     <p>Mexican self-taught frontend
