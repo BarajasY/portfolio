@@ -8,7 +8,7 @@
 }
 
 .intro_text {
-    color: white;
+    color: black;
     height: 200px;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
     font-family: 'Montserrat';
     user-select: none;
     margin: 0px 20px;
-    z-index: 30
+    z-index: 30;
 }
 
 .intro_text h1 {
@@ -29,13 +29,13 @@
     font-size: 100px;
     font-weight: 400;
     font-family: 'Poppins';
-    color: rgb(95, 208, 182);
+    color: rgb(28, 155, 126);
     transition: .5s;
     margin: 10px 20px;
 }
 
 .intro_text h1 span:hover {
-    color: rgb(95, 208, 230);
+    color: rgb(28, 155, 126);
     text-shadow: 3px 3px 10px black;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .intro_text span {
-    color: rgb(95, 208, 182);
+    color: rgb(28, 155, 126);
     margin-left: 5px;
     font-size: 40px;
     padding-bottom: 5px;
@@ -56,7 +56,7 @@
 
     .intro_text h1 span {
         font-size: 50px;
-        margin: 10px 15px;
+        margin: 10px 10px;
     }
 
     .intro_text p {
@@ -72,5 +72,18 @@
 @media only screen and (max-width: 400px) {
     .intro_text h1 span {
         margin: 10px 10px;
+    }
+}
+
+@keyframes wavy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-20px)
     }
 }

@@ -7,7 +7,6 @@ import { motion } from 'framer-motion';
 const Stack = () => {
     return (
         <div className="stack_container">
-            <hr />
             <div className="stack_content">
                 <div className="stack_wrapper">
                     <div className="used_tech">

@@ -15,7 +15,7 @@
 }
 
 .test {
-    color: white;
+    color: black;
     width: 90%;
     font-family: 'Poppins';
     font-size: 15px;
@@ -37,6 +37,10 @@
     transition: .5s;
 }
 
+.navbar_text h1 a {
+    color: black;
+}
+
 .navbar_text h1 a:hover {
     opacity: .3;
 }
@@ -46,18 +50,6 @@
     font-weight: 500;
     font-size: 23px;
     transition: .5s;
-}
-
-.progress_bar {
-    width: 7px;
-    height: 400px;
-    border-radius: 10px;
-    border: 1px solid white;
-    background: rgb(25, 25, 25);
-    position: absolute;
-    left: 50px;
-    top: 50%;
-    transform: translateY(50%);
 }
 
 .fill_bar {

@@ -2,37 +2,18 @@
     width: 100vw;
     max-width: 100%;
     height: fit-content;
-    background: rgb(25, 25, 25);
     display: flex;
     justify-content: center;
-    box-shadow: -5px -20px 10px rgb(25, 25, 25);
-}
-
-.about_container hr {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    height: 200px;
 }
 
 .about_content {
     display: flex;
     align-items: center;
     padding: 100px;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    color: white;
-}
-
-.about_wrapper {
-    width: 60%;
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    height: 100%;
-    z-index: 20;
-    background: rgb(25, 25, 25);
+    justify-content: center;
+    width: 80%;
+    color: black;
 }
 
 .about_text {
@@ -42,14 +23,14 @@
     font-family: 'Poppins';
     font-size: 15px;
     flex-direction: column;
-    text-align: center;
+    text-align: justify;
     z-index: 10;
-    background: rgb(25, 25, 25);
 }
 
 .about_text h1 {
     margin: 5px 0px;
     font-weight: 300;
+    text-align: justify;
 }
 
 button {
@@ -76,10 +57,9 @@ button:hover {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    color: white;
+    color: black;
     font-size: 80px;
     z-index: 10;
-    background: rgb(25, 25, 25);
 }
 
 .contact_section p {
@@ -94,7 +74,7 @@ button:hover {
 }
 
 .github_icon:hover {
-    color: rgb(95, 208, 182);
+    color: rgb(28, 155, 126);
 }
 
 .icons:hover {
@@ -136,11 +116,11 @@ button:hover {
     }
 
     .about_content {
-        height: 1000px;
+        height: fit-content;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .about_container {
         height: fit-content;
     }

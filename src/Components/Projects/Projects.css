@@ -2,7 +2,6 @@
     width: 100vw;
     height: fit-content;
     max-width: 100%;
-    background: rgb(25, 25, 25);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -11,7 +10,7 @@
 .projects_header {
     display: flex;
     flex-direction: row;
-    color: white;
+    color: black;
     font-family: 'Poppins';
     font-size: 30px;
     justify-content: center;
@@ -28,7 +27,6 @@
 }
 
 .projects {
-    background: rgb(25, 25, 25);
     width: 100%;
     display: flex;
     align-items: center;
@@ -52,9 +50,11 @@
 
 .test_project img {
     margin-top: 10px;
-    width: 1000px;
-    height: 600px;
+    width: 800px;
+    height: 500px;
     transition: .5s;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
 .test_project img:hover {
@@ -73,30 +73,35 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-right: 1px solid rgb(28, 155, 126);
 }
 
 .project_title h1 {
-    color: white;
-    font-family: 'Roboto Mono';
+    color: black;
+    font-family: 'Poppins';
     font-size: 50px;
     font-weight: 700;
     text-align: center;
 }
 
 .project_title p {
-    color: rgb(95, 208, 182);
+    color: rgb(28, 155, 126);
     text-align: center;
     font-size: 30px;
+    font-weight: 500;
 }
 
 .project_description {
     width: 46%;
+    padding: 20px;
+    border-left: 1px solid rgb(28, 155, 126);
 }
 
 .project_description p {
-    color: white;
+    color: black;
     font-size: 25px;
     text-align: center;
+    font-weight: 500;
 }
 
 .icons_section {
@@ -109,7 +114,7 @@
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    color: white;
+    color: rgb(57, 57, 57);
 }
 
 .buttons {
@@ -121,7 +126,15 @@
     width: 50%;
     font-size: 30px;
     height: 60px;
-    z-index: 10
+    z-index: 10;
+    color: black;
+    background: rgb(222, 222, 222);
+    border: 1px solid black;
+}
+
+.page_buttons:hover {
+    color: rgb(222, 222, 222);
+    background: black;
 }
 
 .alert_text p {
@@ -148,6 +161,10 @@
         width: 100%;
         height: 400px;
     }
+
+    .page_buttons {
+        font-size: 25px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -159,12 +176,16 @@
     .page_buttons {
         width: 50%;
         height: fit-content;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .project_header {
         align-items: center;
         flex-direction: column;
+    }
+
+    .project_title {
+        width: 100%;
     }
 
     .project_title h1 {
