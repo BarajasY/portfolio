@@ -33,3 +33,7 @@ a {
 ::-webkit-scrollbar-thumb {
   background: gray;
 }
+
+:root {
+  --gray: rgb(57, 57, 57);
+}

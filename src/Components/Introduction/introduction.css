@@ -26,17 +26,21 @@
 }
 
 .intro_text h1 span {
-    font-size: 100px;
-    font-weight: 400;
-    font-family: 'Poppins';
+    font-size: 130px;
+    font-weight: 700;
+    font-family: 'Raleway';
     color: rgb(28, 155, 126);
     transition: .5s;
-    margin: 10px 20px;
+    margin: 10px 15px;
 }
 
 .intro_text h1 span:hover {
     color: rgb(28, 155, 126);
     text-shadow: 3px 3px 10px black;
+}
+
+.intro_text h1 span:nth-child(6) {
+    margin-left: 3vw;
 }
 
 .intro_text p {
@@ -52,11 +56,17 @@
     text-align: center;
 }
 
+@media only screen and (max-width: 900px) {
+    .intro_text h1 span {
+        font-size: 90px;
+        margin: 10px 10px;
+    }
+}
+
 @media only screen and (max-width: 700px) {
 
     .intro_text h1 span {
-        font-size: 50px;
-        margin: 10px 10px;
+        font-size: 13vw;
     }
 
     .intro_text p {
