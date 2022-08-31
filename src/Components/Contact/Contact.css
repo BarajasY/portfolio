@@ -98,3 +98,13 @@
     font-size: 36px;
     text-align: center;
 }
+
+@media only screen and (max-width: 991px) {
+    .form_name {
+        width: 90%;
+    }
+
+    .form_text {
+        width: 90%;
+    }
+}

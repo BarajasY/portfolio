@@ -28,8 +28,8 @@ const Yanagiya = () => {
                 <img src={yanagiya_page} alt="portfolio" />
             </motion.div>
             <div className="buttons">
-                <a href="https://yanagiya-clone.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
-                <a href="https://github.com/Kanomb/yanagiya-clone" target="_blank" rel="noreferrer"><button className="page_buttons">Source code</button></a>
+                <a href="https://yanagiya-clone.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 0px 0px 40px' }}>See Live</button></a>
+                <a href="https://github.com/Kanomb/yanagiya-clone" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 40px 0px 0px' }}>Source code</button></a>
             </div>
         </div>
     )

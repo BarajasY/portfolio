@@ -1,6 +1,6 @@
 import React from 'react'
 import './Projects.css';
-import portfolio_page from '../../assets/portfolio_page.PNG';
+import portfolio_page from '../../assets/portfolio.PNG';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import { motion } from 'framer-motion'
@@ -29,10 +29,10 @@ const Portfolio = () => {
                 <img src={portfolio_page} alt="portfolio" />
             </motion.div>
             <div className="buttons">
-                <a href="https://yahirmb-portfolio.netlify.app/" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
-                <a href="https://github.com/Kanomb/portfolio" target="_blank" rel="noreferrer"><button className="page_buttons">Source code</button></a>
+                <a href="https://yahirmb-portfolio.netlify.app/" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 0px 0px 40px' }}>See Live</button></a>
+                <a href="https://github.com/Kanomb/portfolio" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 40px 0px 0px' }}>Source code</button></a>
             </div>
-        </div>
+        </div >
     )
 }
 

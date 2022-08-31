@@ -25,4 +25,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-/* height: `${scrollYProgress.current * 100}%` */

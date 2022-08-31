@@ -134,8 +134,8 @@
 }
 
 .page_buttons:hover {
-    color: rgb(222, 222, 222);
-    background: black;
+    color: white;
+    background: rgb(28, 155, 126);
 }
 
 .alert_text p {
@@ -150,7 +150,15 @@
 
 @media only screen and (max-width: 800px) {
     .test_project {
-        width: 600px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .project_title h1 {
+        font-size: 30px;
+    }
+
+    .project_description p {
         font-size: 20px;
     }
 
@@ -164,7 +172,7 @@
     }
 
     .page_buttons {
-        font-size: 25px;
+        font-size: 18px;
     }
 }
 
@@ -177,7 +185,7 @@
     .page_buttons {
         width: 50%;
         height: fit-content;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .project_header {

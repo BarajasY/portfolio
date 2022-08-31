@@ -29,8 +29,8 @@ const Weird_calc = () => {
                 <img src={weird_calc} alt="elantra" />
             </motion.div>
             <div className="buttons">
-                <a href="https://yahirmb-calc.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons">See Live</button></a>
-                <a href="https://github.com/Kanomb/calculators" target="_blank" rel="noreferrer"><button className="page_buttons">Source code</button></a>
+                <a href="https://yahirmb-calc.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 0px 0px 40px' }}>See Live</button></a>
+                <a href="https://github.com/Kanomb/calculators" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 40px 0px 0px' }}>Source code</button></a>
             </div>
         </div>
     )
