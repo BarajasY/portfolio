@@ -4,7 +4,8 @@
     position: fixed;
     display: flex;
     justify-content: center;
-    z-index: 30;
+    background: rgb(222, 222, 222);
+    z-index: 10;
 }
 
 .navbar_content {
@@ -52,17 +53,7 @@
     transition: .5s;
 }
 
-.fill_bar {
-    width: 100%;
-    background: rgb(95, 208, 182);
-    border-radius: 10px;
-}
-
 @media only screen and (max-width: 991px) {
-    .progress_bar {
-        display: none;
-    }
-
     .test {
         font-size: 10px;
         justify-content: center;
