@@ -2,7 +2,6 @@ import React from 'react'
 import './Projects.css';
 import elantra_mockup from '../../assets/elantra_mockup.PNG';
 import { FaReact, FaCss3, FaHtml5, FaBootstrap } from 'react-icons/fa';
-import { motion } from 'framer-motion';
 
 const Elantra = () => {
 
@@ -24,12 +23,12 @@ const Elantra = () => {
                     </div>
                 </div>
             </div>
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 2 }}>
+            <div>
                 <img src={elantra_mockup} alt="elantra" />
-            </motion.div>
+            </div>
             <div className="buttons">
-                <a href="https://elantra-mockup2.netlify.app/" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 0px 0px 40px' }}>See Live</button></a>
-                <a href="https://github.com/Kanomb/elantra" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 40px 0px 0px' }}>Code</button></a>
+                <a href="https://elantra-mockup2.netlify.app/" target="_blank" rel="noreferrer"><button className="page_buttons" >See Live</button></a>
+                <a href="https://github.com/Kanomb/elantra" target="_blank" rel="noreferrer"><button className="page_buttons" >Code</button></a>
             </div>
         </div>
     )

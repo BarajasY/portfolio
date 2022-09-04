@@ -129,8 +129,9 @@
     font-family: 'Poppins';
     z-index: 10;
     color: black;
-    background: rgb(222, 222, 222);
+    background: rgb(213, 212, 212);
     border: 1px solid black;
+    transition: .5s;
 }
 
 .page_buttons:hover {

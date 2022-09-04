@@ -4,8 +4,6 @@ import astrobuyer_page from '../../assets/astrobuyer_page.PNG'
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import { SiFirebase } from 'react-icons/si';
-import { motion } from 'framer-motion';
-
 
 const Astrobuyer = () => {
 
@@ -29,12 +27,12 @@ const Astrobuyer = () => {
                     </div>
                 </div>
             </div>
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 2 }}>
+            <div>
                 <img src={astrobuyer_page} alt="astrobuyer page" />
-            </motion.div>
+            </div>
             <div className="buttons">
-                <a href="https://astrobuyer.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 0px 0px 40px' }}>See Live</button></a>
-                <a href="https://github.com/Kanomb/astrobuyer" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 40px 0px 0px' }}>Code</button></a>
+                <a href="https://astrobuyer.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons" >See Live</button></a>
+                <a href="https://github.com/Kanomb/astrobuyer" target="_blank" rel="noreferrer"><button className="page_buttons" >Code</button></a>
             </div>
         </div>
     )

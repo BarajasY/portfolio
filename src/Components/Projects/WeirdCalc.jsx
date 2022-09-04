@@ -3,7 +3,6 @@ import './Projects.css';
 import weird_calc from '../../assets/weird_calculator.PNG';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
-import { motion } from 'framer-motion';
 
 const Weird_calc = () => {
     return (
@@ -25,12 +24,12 @@ const Weird_calc = () => {
                     </div>
                 </div>
             </div>
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 2 }}>
+            <div>
                 <img src={weird_calc} alt="elantra" />
-            </motion.div>
+            </div>
             <div className="buttons">
-                <a href="https://yahirmb-calc.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 0px 0px 40px' }}>See Live</button></a>
-                <a href="https://github.com/Kanomb/calculators" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 40px 0px 0px' }}>Code</button></a>
+                <a href="https://yahirmb-calc.netlify.app" target="_blank" rel="noreferrer"><button className="page_buttons" >See Live</button></a>
+                <a href="https://github.com/Kanomb/calculators" target="_blank" rel="noreferrer"><button className="page_buttons" >Code</button></a>
             </div>
         </div>
     )

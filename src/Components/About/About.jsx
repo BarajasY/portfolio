@@ -1,15 +1,8 @@
 import React from 'react';
 import './About.css';
-import { AiFillGithub } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 
 const About = () => {
-    const url = 'https://github.com/Kanomb';
-
-    const githubTab = () => {
-        window.open(url, '_blank')
-    }
-
     return (
         <div className="about_container">
             <motion.div className="about_content">
@@ -20,10 +13,6 @@ const About = () => {
                     <motion.h1 initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}>So, since my career started with backend development using Django, that's what i wanted to become, but then i realized that backend may not be the best choice if i was just starting my career. So i started to learn frontend tools such as CSS, HTML & React to build my knowledge up.</motion.h1>
                     <motion.h1 initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}>Finally i must say that i do have in mind to become a full stack developer, but for now, i'll be starting with frontend and then after a while, backend.</motion.h1>
                 </div>
-                <motion.div className="contact_section" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}>
-                    <AiFillGithub className="github_icon" onClick={githubTab} />
-                    <p>My github</p>
-                </motion.div>
             </motion.div>
         </div>
     )

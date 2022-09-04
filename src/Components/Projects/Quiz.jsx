@@ -4,7 +4,6 @@ import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import { SiFirebase } from 'react-icons/si';
 import quiz from '../../assets/Quiz.PNG'
-import { motion } from 'framer-motion';
 
 const Quiz = () => {
 
@@ -26,12 +25,12 @@ const Quiz = () => {
                     </div>
                 </div>
             </div>
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 2 }}>
+            <div>
                 <img src={quiz} alt="portfolio" className="image" />
-            </motion.div>
+            </div>
             <div className="buttons">
-                <a href="https://yahirmb-quiz.netlify.app/" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 0px 0px 40px' }}>See Live</button></a>
-                <a href="https://github.com/Kanomb/programming-quiz" target="_blank" rel="noreferrer"><button className="page_buttons" style={{ borderRadius: '0px 40px 0px 0px' }}>Code</button></a>
+                <a href="https://yahirmb-quiz.netlify.app/" target="_blank" rel="noreferrer"><button className="page_buttons" >See Live</button></a>
+                <a href="https://github.com/Kanomb/programming-quiz" target="_blank" rel="noreferrer"><button className="page_buttons" >Code</button></a>
             </div>
         </div>
     )
