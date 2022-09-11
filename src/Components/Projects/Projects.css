@@ -177,7 +177,7 @@
     }
 
     .project_title h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .project_description p {
@@ -194,7 +194,7 @@
     }
 
     .page_buttons {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
@@ -205,9 +205,9 @@
     }
 
     .page_buttons {
-        width: 50%;
+        width: 100%;
         height: fit-content;
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .project_header {
@@ -220,7 +220,7 @@
     }
 
     .project_title h1 {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .project_title p {

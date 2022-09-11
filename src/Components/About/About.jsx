@@ -9,7 +9,7 @@ const About = () => {
         <div className="about_container">
             <div className="about_content">
                 <div className={Active ? "about_header_active" : "about_header"}>
-                    <h1>{Active ? "Show Less" : "Want to know about me?"}</h1>
+                    <h1>{Active ? "Show Less" : "About me -->"}</h1>
                     <div className={Active ? "about_button_active" : "about_button"} onClick={() => setActive(!Active)}></div>
                 </div>
                 {Active ?

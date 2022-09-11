@@ -181,6 +181,15 @@ button:hover {
 }
 
 @media only screen and (max-width: 700px) {
+    .about_header h1 {
+        font-size: 8vw;
+    }
+
+    .about_header_active h1 {
+        font-size: 8vw;
+    }
+
+
     .about_container {
         height: fit-content;
     }
