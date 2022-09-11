@@ -15,6 +15,15 @@
     height: 70px;
 }
 
+.logo {
+    margin-left: 50px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
 .test {
     color: rgb(57, 57, 57);
     width: 90%;

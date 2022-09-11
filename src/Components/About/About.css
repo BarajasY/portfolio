@@ -16,6 +16,66 @@
     color: black;
 }
 
+.about_header {
+    margin-bottom: 200px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    transition: .5s;
+    justify-content: space-between;
+}
+
+.about_header_active {
+    padding: 0px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+.about_header_active h1 {
+    display: flex;
+    align-items: center;
+    font-size: 5vw;
+    color: rgb(28, 155, 126);
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.about_header h1 {
+    display: flex;
+    align-items: center;
+    font-size: 4vw;
+    color: rgb(28, 155, 126);
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.about_button {
+    width: 40px;
+    height: 40px;
+    background: gray;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 4px 4px black;
+}
+
+.about_button:hover {
+    filter: brightness(60%);
+}
+
+.about_button_active {
+    width: 40px;
+    height: 40px;
+    background: rgb(28, 155, 126);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 4px 4px black;
+}
+
 .about_text {
     display: flex;
     justify-content: center;
