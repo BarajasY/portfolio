@@ -22,7 +22,7 @@
     height: fit-content;
     display: flex;
     transition: .5s;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .about_header_active {
@@ -30,7 +30,7 @@
     width: 100%;
     height: fit-content;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     transition: .5s;
 }
 
@@ -41,18 +41,39 @@
     color: rgb(28, 155, 126);
     font-family: 'Poppins';
     text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid black;
+    transition: .2s;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .about_header h1 {
     display: flex;
     align-items: center;
-    font-size: 4vw;
-    color: rgb(28, 155, 126);
+    font-size: 5vw;
+    color: rgb(57, 57, 57);
     font-family: 'Poppins';
     text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    transition: .2s;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.about_button {
+.about_header h1:hover {
+    background: rgb(28, 155, 126);
+    color: rgb(213, 212, 212);
+}
+
+.about_header_active h1:hover {
+    background: rgb(57, 57, 57);
+    color: rgb(213, 212, 212);
+}
+
+/* .about_button {
     width: 40px;
     height: 40px;
     background: gray;
@@ -75,7 +96,7 @@
     transition: .5s;
     box-shadow: 4px 4px black;
 }
-
+ */
 .about_text {
     display: flex;
     justify-content: center;
