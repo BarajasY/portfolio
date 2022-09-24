@@ -73,30 +73,6 @@
     color: rgb(213, 212, 212);
 }
 
-/* .about_button {
-    width: 40px;
-    height: 40px;
-    background: gray;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: .5s;
-    box-shadow: 4px 4px black;
-}
-
-.about_button:hover {
-    filter: brightness(60%);
-}
-
-.about_button_active {
-    width: 40px;
-    height: 40px;
-    background: rgb(28, 155, 126);
-    border-radius: 20px;
-    cursor: pointer;
-    transition: .5s;
-    box-shadow: 4px 4px black;
-}
- */
 .about_text {
     display: flex;
     justify-content: center;
