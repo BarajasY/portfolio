@@ -13,8 +13,6 @@ const Header = () => {
                     <motion.span animate={{ y: 0 }} initial={{ y: -80 }} transition={{ duration: .2, delay: .30 }}>H</motion.span>
                     <motion.span animate={{ y: 0 }} initial={{ y: -80 }} transition={{ duration: .2, delay: .45 }}>I</motion.span>
                     <motion.span animate={{ y: 0 }} initial={{ y: -80 }} transition={{ duration: .2, delay: .60 }}>R</motion.span>
-                    {/*                     <motion.span style={{ color: 'rgb(222,222,222)', marginRight: 2 }}>M</motion.span>
-                    <motion.span style={{ color: 'rgb(222,222,222)', marginLeft: 2 }}>B</motion.span> */}
                 </motion.h1>
                 <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 2, delay: 1 }} >
                     <p>Mexican self-taught frontend

@@ -9,32 +9,32 @@ const Stack = () => {
         <div className="stack_container">
             <div className="stack_content">
                 <div className="used_tech">
-                    <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
+                    <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: .5 }} viewport={{ once: true }}>
                         <h1>Tech i've used</h1>
                     </motion.div>
                     <div className="wrapper">
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true }}>
+                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: .5 }} viewport={{ once: true }}>
                             <SiReact className="stack_icon" />
                         </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .2 }} viewport={{ once: true }}>
+                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .2 }} viewport={{ once: true }}>
                             <IoLogoJavascript className="stack_icon" />
                         </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .4 }} viewport={{ once: true }}>
+                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .4 }} viewport={{ once: true }}>
                             <IoLogoHtml5 className="stack_icon" />
                         </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .6 }} viewport={{ once: true }}>
+                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .6 }} viewport={{ once: true }}>
                             <IoLogoCss3 className="stack_icon" />
                         </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: .8 }} viewport={{ once: true }}>
+                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: .8 }} viewport={{ once: true }}>
                             <SiFirebase className="stack_icon" />
                         </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1 }} viewport={{ once: true }}>
+                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: 1 }} viewport={{ once: true }}>
                             <SiBootstrap className="stack_icon" />
                         </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.2 }} viewport={{ once: true }}>
+                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: 1.2 }} viewport={{ once: true }}>
                             <SiExpress className="stack_icon" />
                         </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.4 }} viewport={{ once: true }}>
+                        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: .5, delay: 1.4 }} viewport={{ once: true }}>
                             <SiPostgresql className="stack_icon" />
                         </motion.div>
                     </div>

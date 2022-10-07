@@ -86,26 +86,9 @@
 
 .about_text h1 {
     margin: 5px 0px;
+    font-size: 22px;
     font-weight: 300;
     text-align: justify;
-}
-
-button {
-    font-family: 'Roboto';
-    width: 250px;
-    height: fit-content;
-    font-size: 37px;
-    border: 1px solid white;
-    padding: 10px;
-    background: rgb(25, 25, 25);
-    color: white;
-    transition: 1s;
-    cursor: pointer;
-}
-
-button:hover {
-    background: white;
-    color: rgb(25, 25, 25);
 }
 
 .contact_section {
@@ -117,25 +100,6 @@ button:hover {
     color: black;
     font-size: 80px;
     z-index: 10;
-}
-
-.contact_section p {
-    font-size: 25px;
-}
-
-
-.github_icon {
-    margin-left: 20px;
-    margin-right: 20px;
-    transition: .5s;
-}
-
-.github_icon:hover {
-    color: rgb(28, 155, 126);
-}
-
-.icons:hover {
-    opacity: 0.3;
 }
 
 @media only screen and (max-width: 992px) {
