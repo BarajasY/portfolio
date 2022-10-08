@@ -81,7 +81,6 @@
     font-size: 15px;
     flex-direction: column;
     text-align: justify;
-    z-index: 10;
 }
 
 .about_text h1 {
@@ -89,17 +88,6 @@
     font-size: 22px;
     font-weight: 300;
     text-align: justify;
-}
-
-.contact_section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    color: black;
-    font-size: 80px;
-    z-index: 10;
 }
 
 @media only screen and (max-width: 992px) {
