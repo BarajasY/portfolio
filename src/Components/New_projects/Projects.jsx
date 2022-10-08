@@ -9,6 +9,7 @@ import Quiz from './Quiz';
 import Pokechampions from './Pokechampions'
 import WeirdCalc from './WeirdCalc';
 import PokeQuiz from './PokeQuiz';
+import Portfolio from './Portfolio';
 
 const Projects = () => {
 
@@ -21,6 +22,7 @@ const Projects = () => {
                 <Elantra />
                 <Rick />
                 <Blog />
+                <Portfolio />
                 <Yanagiya />
                 <Astrobuyer />
                 <Quiz />
