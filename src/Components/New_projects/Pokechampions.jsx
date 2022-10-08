@@ -24,8 +24,8 @@ const Pokechampions = () => {
                             <img src={pokechamp} alt={pokechamp} id='screenshot' />
                         </div>
                         <div className="project_description">
-                            <p>A full stack application about the pokemon champions!</p>
-                            <p>I made this application using Express as the backend, PostgreSQL as the database and React serving as the frontend.</p>
+                            <p>A full stack application about the pokemon champions!
+                                I made this application using Express as the backend, PostgreSQL as the database and React serving as the frontend.</p>
                         </div>
                         <div className="project_stack">
                             <p>I used the following tech stack in this project:</p>

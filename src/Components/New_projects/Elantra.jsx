@@ -22,8 +22,8 @@ const Elantra = () => {
                             <img src={elantra} alt={elantra} id='screenshot' />
                         </div>
                         <div className="project_description">
-                            <p>My first ever static webpage that displays the new 2022 Elantra. It has images of the elantra and the description of each version of it.</p>
-                            <p>This is the project that started my career as a React developer.</p>
+                            <p>My first ever static webpage that displays the new 2022 Elantra. It has images of the elantra and the description of each version of it.
+                                This is the project that started my career as a React developer.</p>
                         </div>
                         <div className="project_stack">
                             <p>I used the following tech stack in this project:</p>
