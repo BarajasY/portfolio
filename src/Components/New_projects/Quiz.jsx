@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import quiz from '../../assets/quiz_logo.png';
+import Quiz_page from '../../assets/Quiz.PNG';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -12,14 +13,15 @@ const Quiz = () => {
 
     return (
         <div className="project_content">
-            <img src={quiz} alt={quiz} onClick={() => setOpen(!Open)} />
+            <img src={quiz} alt={quiz} onClick={() => setOpen(!Open)} id='logo' />
             <AnimatePresence>
                 {Open
                     ?
-                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .8 }} className="project_info">
+                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .5 }} className="project_info">
                         <AiOutlineClose className="arrow" onClick={() => setOpen(!Open)} />
                         <div className="project_header">
                             <h1>React/Javascript Quiz</h1>
+                            <img src={Quiz_page} alt={Quiz_page} id='screenshot' />
                         </div>
                         <div className="project_description">
                             <p>A quiz app where React/Javascript related questions will be shown to the user. This project allowed me to really understand how some react hooks work, such as UseEffect and useState. Additionally i learned React theory.</p>

@@ -12,19 +12,19 @@ const PokeQuiz = () => {
 
     return (
         <div className="project_content">
-            <img src={pokequiz} alt={pokequiz} onClick={() => setOpen(!Open)} />
+            <img src={pokequiz} alt={pokequiz} onClick={() => setOpen(!Open)} id='logo' />
             <AnimatePresence>
                 {Open
                     ?
-                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .8 }} className="project_info">
+                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .5 }} className="project_info">
                         <AiOutlineClose className="arrow" onClick={() => setOpen(!Open)} />
                         <div className="project_header">
                             <h1>Pokemon Quiz</h1>
                         </div>
                         <div className="project_description">
-                            <p>Another single page application using pure react and javascript, and a little bit of firebase backend.</p>
-                            <p>In this project you can guess pokemons based on their gen 5 sprites.</p>
-                            <p>I've added selectors for the amount of pokemons the user wish to guess, and a difficulty selector.</p>
+                            <p>Another single page application using pure react and javascript, and a little bit of firebase backend.
+                                In this project you can guess pokemons based on their gen 5 sprites.
+                                I've added selectors for the amount of pokemons the user wish to guess, and a difficulty selector.</p>
                         </div>
                         <div className="project_stack">
                             <p>I used the following tech stack in this project:</p>

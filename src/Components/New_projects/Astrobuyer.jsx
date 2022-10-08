@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import astrobuyer from '../../assets/astrobuyer_logo.png';
+import astrobuyer_page from '../../assets/astrobuyer_page.PNG';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -12,19 +13,20 @@ const Astrobuyer = () => {
 
     return (
         <div className="project_content">
-            <img src={astrobuyer} alt={astrobuyer} onClick={() => setOpen(!Open)} />
+            <img src={astrobuyer} alt={astrobuyer} onClick={() => setOpen(!Open)} id='logo' />
             <AnimatePresence>
                 {Open
                     ?
-                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .8 }} className="project_info">
+                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .5 }} className="project_info">
                         <AiOutlineClose className="arrow" onClick={() => setOpen(!Open)} />
                         <div className="project_header">
                             <h1>Astrobuyer website</h1>
+                            <img src={astrobuyer_page} alt={astrobuyer_page} id='screenshot' />
                         </div>
                         <div className="project_description">
-                            <p>In this site you can login and simulate that you're buying some planets or stars. Even you can add them to your cart!.</p>
-                            <p>I made this site in order to grasp more experience into databases and how to connect them with my react frontend.</p>
-                            <p>Additionally thanks to this project i realized how strong the react context hook is.</p>
+                            <p>In this site you can login and simulate that you're buying some planets or stars. Even you can add them to your cart!.
+                                I made this site in order to grasp more experience into databases and how to connect them with my react frontend.
+                                Additionally thanks to this project i realized how strong the react context hook is.</p>
                         </div>
                         <div className="project_stack">
                             <p>I used the following tech stack in this project:</p>

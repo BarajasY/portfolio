@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import portfolio from '../../assets/portfolio_logo.png';
+import portfolio_page from '../../assets/portfolio.PNG';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -11,18 +12,19 @@ const Portfolio = () => {
 
     return (
         <div className="project_content">
-            <img src={portfolio} alt={portfolio} onClick={() => setOpen(!Open)} />
+            <img src={portfolio} alt={portfolio} onClick={() => setOpen(!Open)} id='logo' />
             <AnimatePresence>
                 {Open
                     ?
-                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .8 }} className="project_info">
+                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .5 }} className="project_info">
                         <AiOutlineClose className="arrow" onClick={() => setOpen(!Open)} />
                         <div className="project_header">
                             <h1>Personal Portfolio</h1>
+                            <img src={portfolio_page} alt={portfolio_page} id='screenshot' />
                         </div>
                         <div className="project_description">
-                            <p>The website you're in currently!. Made this site to serve as a collection of all the things i've done and also to display my learning progress as a developer.</p>
-                            <p>This project has evolved a lot since i started it.</p>
+                            <p>The website you're in currently!. Made this site to serve as a collection of all the things i've done and also to display my learning progress as a developer.
+                                This project has evolved a lot since i started it.</p>
                         </div>
                         <div className="project_stack">
                             <p>I used the following tech stack in this project:</p>

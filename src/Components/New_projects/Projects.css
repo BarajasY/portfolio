@@ -24,7 +24,7 @@
     flex-wrap: wrap;
 }
 
-.project_content img {
+#logo {
     width: 230px;
     height: 230px;
     background: white;
@@ -34,7 +34,7 @@
     border: 1px solid black;
 }
 
-.project_content img:hover {
+#logo:hover {
     transform: rotate(-10deg);
 }
 
@@ -76,21 +76,36 @@
     cursor: pointer;
 }
 
+.arrow:hover {
+    transform: rotate(180deg);
+}
+
+.project_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .project_header h1 {
-    font-size: 4vw;
+    font-size: 2vw;
     text-align: center;
     font-weight: 400;
     padding: 20px;
 }
 
+#screenshot {
+    width: 32vw;
+    height: 18vw;
+}
+
 .project_description p {
     text-align: justify;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     padding: 20px
 }
 
 .project_stack {
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,7 +139,7 @@
     color: #000300;
     margin: 20px;
     border: 2px solid transparent;
-    font-size: 2vw;
+    font-size: 1.8vw;
     cursor: pointer;
     padding: 10px 20px;
     transition: .2s ease-in-out;
@@ -141,32 +156,37 @@
     }
 
     .project_header h1 {
-        font-size: 5vw;
+        font-size: 3vw;
     }
 
     .project_description p {
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
 
     .project_stack {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     .icons {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .project_links button {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 }
 
 @media only screen and (max-width: 600px) {
+    #screenshot {
+        width: 200px;
+        height: 150px;
+    }
+
     .projects_title h1 {
         font-size: 7vw;
     }
 
-    .project_content img {
+    #logo {
         width: 200px;
         height: 200px;
     }
@@ -176,19 +196,19 @@
     }
 
     .project_header h1 {
-        font-size: 6vw;
+        font-size: 3vw;
     }
 
     .project_description p {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 
     .project_stack {
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 
     .icons {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     .project_links button {

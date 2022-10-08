@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
-import yanagiya from '../../assets/yanagiya_logo.png';
+import yanagiya from '../../assets/yanagiya_logo3.png';
+import yanagiya_page from '../../assets/yanagiya_page.PNG';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -11,14 +12,15 @@ const Yanagiya = () => {
 
     return (
         <div className="project_content">
-            <img src={yanagiya} alt={yanagiya} onClick={() => setOpen(!Open)} />
+            <img src={yanagiya} alt={yanagiya} onClick={() => setOpen(!Open)} id='logo' />
             <AnimatePresence>
                 {Open
                     ?
-                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .8 }} className="project_info">
+                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .5 }} className="project_info">
                         <AiOutlineClose className="arrow" onClick={() => setOpen(!Open)} />
                         <div className="project_header">
                             <h1>Yanagiya.mx Clone</h1>
+                            <img src={yanagiya_page} alt={yanagiya_page} id='screenshot' />
                         </div>
                         <div className="project_description">
                             <p>My first ever clone website!. In this case we're talking about the Yanagiya.mx. Probably this project helped me better visualize how much work a real-life project can have.</p>

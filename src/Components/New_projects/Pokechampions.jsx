@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import pokechampions from '../../assets/pokechampions_logo.png';
+import pokechamp from '../../assets/pokechamp.PNG';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -12,14 +13,15 @@ const Pokechampions = () => {
 
     return (
         <div className="project_content">
-            <img src={pokechampions} alt={pokechampions} onClick={() => setOpen(!Open)} />
+            <img src={pokechampions} alt={pokechampions} onClick={() => setOpen(!Open)} id='logo' />
             <AnimatePresence>
                 {Open
                     ?
-                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .8 }} className="project_info">
+                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .5 }} className="project_info">
                         <AiOutlineClose className="arrow" onClick={() => setOpen(!Open)} />
                         <div className="project_header">
                             <h1>Pokechampions website</h1>
+                            <img src={pokechamp} alt={pokechamp} id='screenshot' />
                         </div>
                         <div className="project_description">
                             <p>A full stack application about the pokemon champions!</p>
