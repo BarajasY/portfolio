@@ -27,15 +27,15 @@
 #logo {
     width: 230px;
     height: 230px;
-    background: white;
+    background: none;
     z-index: 1;
     cursor: pointer;
     transition: .2s;
-    border: 1px solid black;
+    border: 1px solid transparent;
 }
 
 #logo:hover {
-    transform: rotate(-10deg);
+    border: 1px solid black;
 }
 
 .info_container {
@@ -87,7 +87,7 @@
 }
 
 .project_header h1 {
-    font-size: 2vw;
+    font-size: 1.8vw;
     text-align: center;
     font-weight: 400;
     padding: 20px;
@@ -100,7 +100,7 @@
 
 .project_description p {
     text-align: justify;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     padding: 20px
 }
 
