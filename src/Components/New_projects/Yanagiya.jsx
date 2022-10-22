@@ -8,6 +8,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { IoLogoJavascript } from 'react-icons/io';
 
 const Yanagiya = () => {
+
     const [Open, setOpen] = useState(false)
 
     return (
