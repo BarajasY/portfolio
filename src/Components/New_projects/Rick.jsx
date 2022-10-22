@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Projects.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import rick from '../../assets/rick_logo.png';
-import RAM_API from '../../assets/RAM_API.PNG';
+import RAM_API from '../../assets/RAM_API.webp';
 import { AiOutlineClose } from 'react-icons/ai';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiFillApi } from 'react-icons/ai';

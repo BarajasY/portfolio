@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import astrobuyer from '../../assets/astrobuyer_logo.png';
-import astrobuyer_page from '../../assets/astrobuyer_page.PNG';
+import astrobuyer_page from '../../assets/astrobuyer_page.webp';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';

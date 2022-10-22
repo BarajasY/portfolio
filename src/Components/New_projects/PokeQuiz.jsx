@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import pokequiz from '../../assets/pokequiz_logo.png';
-import pokequiz_page from '../../assets/pokequiz_page.PNG';
+import pokequiz_page from '../../assets/pokequiz_page.webp';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';

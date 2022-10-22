@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import portfolio from '../../assets/portfolio_logo.png';
-import portfolio_page from '../../assets/portfolio.PNG';
+import portfolio_page from '../../assets/portfolio.webp';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';

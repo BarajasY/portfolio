@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import quiz from '../../assets/quiz_logo.png';
-import Quiz_page from '../../assets/Quiz.PNG';
+import Quiz_page from '../../assets/Quiz.webp';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import hyundai from '../../assets/hyundai_logo.png';
-import elantra from '../../assets/elantra_mockup.PNG';
+import elantra from '../../assets/elantra_mockup.webp';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5, FaBootstrap } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';

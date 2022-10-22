@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import yanagiya from '../../assets/yanagiya_logo3.png';
-import yanagiya_page from '../../assets/yanagiya_page.PNG';
+import yanagiya_page from '../../assets/yanagiya_page.webp';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';

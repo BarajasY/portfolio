@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import pokechampions from '../../assets/pokechampions_logo.png';
-import pokechamp from '../../assets/pokechamp.PNG';
+import pokechamp from '../../assets/pokechamp.webp';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
