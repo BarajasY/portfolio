@@ -23,21 +23,33 @@
     display: flex;
     flex-direction: row;
     margin-top: -100px;
+    position: relative;
+}
+
+.intro_text h1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 0px;
+    height: 5px;
+    background: var(--dblue);
+    transform: translateY(-30px);
+    bottom: 0;
+    transition: .2s;
+}
+
+.intro_text h1:hover::after {
+    width: 100%;
 }
 
 .intro_text h1 span {
-    font-size: 20vw;
+    font-size: 16vw;
     font-weight: 800;
     font-family: 'Raleway';
     color: rgb(28, 155, 126);
     transition: .2s;
     margin: 10px 15px;
-}
-
-.intro_text h1 span:hover {
-    text-shadow: 0px 10px 15px cyan,
-        10px 10px 15px cyan,
-        0px 10px 15px cyan;
 }
 
 .intro_text h1 span:nth-child(6) {
@@ -46,13 +58,13 @@
 }
 
 .intro_text p {
-    font-size: 25px;
+    font-size: 21px;
     text-align: center;
     width: 40vw;
 }
 
 .intro_text span {
-    color: rgb(28, 155, 126);
+    color: var(--cyan);
     margin-left: 5px;
     font-size: 25px;
     padding-bottom: 20px;

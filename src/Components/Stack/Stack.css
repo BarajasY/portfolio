@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 200px 0px;
+    margin: 100px 0px 200px 0px;
 }
 
 .stack_content {
@@ -30,12 +30,12 @@
 .stack_icon {
     font-size: 70px;
     margin: 20px 20px;
-    color: rgb(57, 57, 57);
-    transition: .5s;
+    color: var(--dblue);
+    transition: .2s;
 }
 
 .stack_icon:hover {
-    color: rgb(28, 155, 126);
+    color: var(--cyan);
 }
 
 .learning_tech {
@@ -50,10 +50,6 @@
     flex-wrap: wrap;
 }
 
-.fisiks canvas {
-    width: 50vw;
-    height: 75vh
-}
 
 @media only screen and (max-width: 900px) {
     .stack_container {
@@ -68,8 +64,7 @@
         font-size: 20px;
     }
 
-    .fisiks canvas {
-        width: 100vw;
-        height: 60vh;
+    .stack_icon {
+        font-size: 10vw;
     }
 }

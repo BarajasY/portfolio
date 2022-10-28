@@ -1,5 +1,6 @@
 .projects_container {
     width: 100vw;
+    max-width: 100%;
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -9,7 +10,7 @@
 
 .projects_title h1 {
     margin-bottom: 50px;
-    color: rgb(28, 155, 126);
+    color: var(--cyan);
     font-size: 5vw;
     font-family: 'Poppins';
     font-weight: 600;
@@ -25,13 +26,13 @@
 }
 
 #logo {
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     background: none;
-    z-index: 1;
     cursor: pointer;
     transition: .2s;
     border: 1px solid transparent;
+    position: relative;
 }
 
 #logo:hover {

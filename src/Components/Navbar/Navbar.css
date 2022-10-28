@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     z-index: 20;
-    background: rgb(213, 212, 212);
+    background: var(--silver);
 }
 
 .navbar_content {
@@ -16,16 +16,34 @@
 }
 
 .logo {
-    margin-left: 50px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 1em;
 }
 
 .logo img {
     width: 70px;
     height: 70px;
+    position: relative;
+}
+
+.logo::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0px;
+    height: 3px;
+    background: var(--cyan);
+    transform: translateY(-15px);
+    transition: .2s;
+}
+
+.logo:hover::after {
+    width: 70px;
 }
 
 .test {
-    color: rgb(57, 57, 57);
+    color: var(--black);
     width: 90%;
     font-family: 'Poppins';
     font-size: 15px;
@@ -49,10 +67,11 @@
 }
 
 .navbar_text h1 a {
-    color: rgb(57, 57, 57);
+    color: var(--black);
     border-radius: 50%;
-    transition: .5s;
+    transition: .2s;
     padding: 5px;
+    border: 1px solid none;
 }
 
 .navbar_text h1 a:hover {
@@ -67,7 +86,7 @@
     font-family: 'Poppins';
     font-weight: 500;
     font-size: 50px;
-    transition: .5s;
+    transition: .2s;
 }
 
 #linkedin h1 a:hover {

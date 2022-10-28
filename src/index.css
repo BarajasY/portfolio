@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(213, 212, 212);
+  background: var(--silver);
 }
 
 code {
@@ -36,4 +36,10 @@ a {
 
 :root {
   --gray: rgb(57, 57, 57);
+  --cyan: rgb(28, 155, 126);
+  --silver: #d3dadc;
+  --black: #040304;
+  --dred: #8d382b;
+  --blue: #24acbd;
+  --dblue: #18243e;
 }
