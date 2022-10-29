@@ -23,11 +23,10 @@ const Rick = () => {
                             <img src={RAM_API} alt={RAM_API} id='screenshot' />
                         </div>
                         <div className="project_description">
-                            <p>My first attempt to use an API!. In this case i used the Rick and Morty API. It allows the user to see the characters from the show and an additional description of them
-                                This projected allowed me to better understand how JSX works.</p>
+                            <p>My first attempt to use an API!. In this case i used the Rick and Morty API. It allows the user to see the characters from the show and an additional description of them.
+                                This project allowed me to better understand how JSX and APIS work.</p>
                         </div>
                         <div className="project_stack">
-                            <p>I used the following tech stack in this project:</p>
                             <div className="section">
                                 <FaReact className="icons" />
                                 <FaCss3 className="icons" />

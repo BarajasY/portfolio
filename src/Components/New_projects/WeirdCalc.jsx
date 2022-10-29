@@ -28,7 +28,6 @@ const WeirdCalc = () => {
                                 So i decided to hop into VSC and make myself some calculators of those numbers. I will add more calculators to this site in the near future!</p>
                         </div>
                         <div className="project_stack">
-                            <p>I used the following tech stack in this project:</p>
                             <div className="section">
                                 <FaReact className="icons" />
                                 <FaCss3 className="icons" />

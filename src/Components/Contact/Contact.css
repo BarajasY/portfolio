@@ -59,7 +59,7 @@
     width: 180px;
     height: fit-content;
     font-size: 30px;
-    border: 1px solid black;
+    border: none;
     background: var(--silver);
     color: black;
     transition: .2s;

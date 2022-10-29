@@ -28,7 +28,6 @@ const Blog = () => {
                                 This website was my first attempt at connecting my react frontend with a firebase database. All of this to make CRUD operations.</p>
                         </div>
                         <div className="project_stack">
-                            <p>I used the following tech stack in this project:</p>
                             <div className="section">
                                 <FaReact className="icons" />
                                 <FaCss3 className="icons" />

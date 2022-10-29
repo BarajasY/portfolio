@@ -29,7 +29,6 @@ const PokeQuiz = () => {
                                 I've added selectors for the amount of pokemons the user wish to guess, and a difficulty selector.</p>
                         </div>
                         <div className="project_stack">
-                            <p>I used the following tech stack in this project:</p>
                             <div className="section">
                                 <FaReact className="icons" />
                                 <FaCss3 className="icons" />

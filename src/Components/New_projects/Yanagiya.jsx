@@ -27,7 +27,6 @@ const Yanagiya = () => {
                             <p>My first ever clone website!. In this case we're talking about the Yanagiya.mx. Probably this project helped me better visualize how much work a real-life project can have.</p>
                         </div>
                         <div className="project_stack">
-                            <p>I used the following tech stack in this project:</p>
                             <div className="section">
                                 <FaReact className="icons" />
                                 <FaCss3 className="icons" />

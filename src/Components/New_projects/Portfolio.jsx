@@ -27,7 +27,6 @@ const Portfolio = () => {
                                 This project has evolved a lot since i started it.</p>
                         </div>
                         <div className="project_stack">
-                            <p>I used the following tech stack in this project:</p>
                             <div className="section">
                                 <FaReact className="icons" />
                                 <FaCss3 className="icons" />
