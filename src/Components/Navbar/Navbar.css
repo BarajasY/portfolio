@@ -74,12 +74,6 @@
     border: 1px solid none;
 }
 
-.navbar_text h1 a:hover {
-    border: 1px solid black;
-    background: white;
-    color: black;
-}
-
 .navbar_text h1 a {
     display: flex;
     align-items: center;
@@ -87,11 +81,63 @@
     font-weight: 500;
     font-size: 50px;
     transition: .2s;
+    position: relative;
+}
+
+#github h1 a::before {
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 3px;
+    background: var(--cyan);
+    display: block;
+    z-index: 1;
+    transition: .5s;
+    opacity: 0;
+}
+
+#github h1 a:hover::before {
+    transform: translateX(50px);
+    opacity: 1;
+    animation: linksani 3s;
+}
+
+#github h1 a:hover {
+    color: var(--cyan);
+    transition: .2s;
+}
+
+#linkedin h1 a::after {
+    content: '';
+    position: relative;
+    width: 3px;
+    background: var(--cyan);
+    display: block;
+    z-index: 1;
+    transition: .5s;
+    opacity: 0;
+}
+
+#linkedin h1 a:hover::after {
+    transform: translateX(-50px);
+    opacity: 1;
+    animation: linksani 3s;
 }
 
 #linkedin h1 a:hover {
     color: #0A63BC;
-    background: rgb(249, 249, 249)
+    transition: .5s;
+}
+
+@keyframes linksani {
+    from {
+        height: 60px;
+    }
+
+    to {
+        height: 0px;
+    }
 }
 
 @media only screen and (max-width: 991px) {

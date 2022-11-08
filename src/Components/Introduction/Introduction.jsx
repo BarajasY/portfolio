@@ -15,7 +15,7 @@ const Header = () => {
                     <motion.span animate={{ y: 0 }} initial={{ y: -80 }} transition={{ duration: .2, delay: .60 }}>R</motion.span>
                 </motion.h1>
                 <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 2, delay: 1 }} >
-                    <p>Mexican self-taught frontend
+                    <p>Mexican self-taught web
                         <Typed
                             strings={[
                                 "developer",
