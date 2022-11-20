@@ -16,7 +16,7 @@ const Projects = () => {
     return (
         <div className="projects_container">
             <div className="projects_title">
-                <h1>All of my Projects</h1>
+                <h1>Projects</h1>
             </div>
             <div className="projects_content">
                 <Elantra />
