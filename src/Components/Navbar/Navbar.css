@@ -84,45 +84,9 @@
     position: relative;
 }
 
-#github h1 a::before {
-    content: '';
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 3px;
-    background: var(--cyan);
-    display: block;
-    z-index: 1;
-    transition: .5s;
-    opacity: 0;
-}
-
-#github h1 a:hover::before {
-    transform: translateX(50px);
-    opacity: 1;
-    animation: linksani 3s;
-}
-
 #github h1 a:hover {
-    color: var(--cyan);
+    opacity: .2;
     transition: .2s;
-}
-
-#linkedin h1 a::after {
-    content: '';
-    position: relative;
-    width: 3px;
-    background: var(--cyan);
-    display: block;
-    z-index: 1;
-    transition: .5s;
-    opacity: 0;
-}
-
-#linkedin h1 a:hover::after {
-    transform: translateX(-50px);
-    opacity: 1;
-    animation: linksani 3s;
 }
 
 #linkedin h1 a:hover {
