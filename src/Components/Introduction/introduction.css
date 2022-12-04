@@ -67,9 +67,9 @@
 
 .intro_description h1 {
     font-family: 'Source Code Pro';
-    font-size: 2.3vw;
+    font-size: 3vw;
     user-select: none;
-    width: 50%;
+    width: 80%;
     font-weight: 800;
     color: transparent;
     text-align: center;
@@ -78,7 +78,7 @@
     background: linear-gradient(90deg, rgba(101,48,40,1) 0%, rgba(9,9,121,1) 67%, rgba(24,36,62,1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    animation: gradbg 7s infinite linear;
+    animation: gradbg 8s infinite linear;
 }
 
 @keyframes gradbg {
