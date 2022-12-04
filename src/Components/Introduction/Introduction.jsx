@@ -70,7 +70,7 @@ const Header = () => {
                 </motion.h1>
             </div>
             <div className="intro_description">
-                    <h1>Mexican software engineering university student</h1>
+                    <h1>Mexican upcoming software engineer</h1>
                 </div>
         </div >
     )

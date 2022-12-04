@@ -12,12 +12,34 @@ const Navbar = () => {
                     <motion.img animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1, delay: 1 }} src={logo} alt="My logo" />
                 </div>
                 <div className="test">
-                    <motion.div className="navbar_text" id="github" animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1, delay: 1 }}>
+                    <motion.span whileHover={{ scale: 1.4}} transition={{
+                        default: {
+                            duration: 0.1,
+                            ease: [0, 0.71, 0.2, 1.01]
+                        },
+                        scale: {
+                            type: "spring",
+                            damping: 5,
+                            stiffness: 100,
+                            restDelta: 0.001
+                        }
+                     }} className="navbar_text" id="github">
                         <h1><a href="https://github.com/Kanomb" target="_blank" rel="noreferrer"><AiFillGithub /></a></h1>
-                    </motion.div>
-                    <motion.div className="navbar_text" id="linkedin" animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1, delay: 1.2 }}>
+                    </motion.span>
+                    <motion.span whileHover={{ scale: 1.4}} transition={{
+                        default: {
+                            duration: 0.1,
+                            ease: [0, 0.71, 0.2, 1.01]
+                        },
+                        scale: {
+                            type: "spring",
+                            damping: 5,
+                            stiffness: 100,
+                            restDelta: 0.001
+                        }
+                    }} className="navbar_text" id="linkedin">
                         <h1><a href="https://www.linkedin.com/in/yahirmb" target="_blank" rel="noreferrer"><AiFillLinkedin /></a></h1>
-                    </motion.div>
+                    </motion.span>
                 </div>
             </div>
 
