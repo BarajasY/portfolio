@@ -16,8 +16,10 @@
 }
 
 .logo {
-    width: fit-content;
+    width: 33%;
     height: fit-content;
+    display: flex;
+    justify-content: center;
     margin-left: 1em;
 }
 
