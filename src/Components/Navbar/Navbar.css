@@ -29,21 +29,6 @@
     position: relative;
 }
 
-.logo::after {
-    content: '';
-    display: block;
-    position: relative;
-    width: 0px;
-    height: 3px;
-    background: var(--cyan);
-    transform: translateY(-15px);
-    transition: .2s;
-}
-
-.logo:hover::after {
-    width: 70px;
-}
-
 .test {
     color: var(--black);
     width: 90%;
