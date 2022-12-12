@@ -26,7 +26,7 @@ const Projects = () => {
                 <Yanagiya />
                 <Astrobuyer />
                 <Quiz />
-                <Pokechampions />
+                {/* <Pokechampions /> */}
                 <WeirdCalc />
                 <PokeQuiz />
             </div>

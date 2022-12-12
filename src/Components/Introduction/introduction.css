@@ -34,8 +34,8 @@
     display: block;
     position: absolute;
     z-index: -1;
-    width: 20px;
-    height: 20px;
+    width: 50%;
+    height: 50%;
     background: var(--dblue);
     animation: fancy 1.5s forwards;
 }
@@ -127,8 +127,8 @@
 
 @keyframes fancy { 
     from {
-        width: 25px;
-        height:25px;
+        width: 50%;
+        height: 50%;
         border-radius: 50%;
     }
     to {
