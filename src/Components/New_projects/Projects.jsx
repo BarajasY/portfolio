@@ -6,7 +6,7 @@ import Blog from './Blog';
 import Yanagiya from './Yanagiya';
 import Astrobuyer from './Astrobuyer';
 import Quiz from './Quiz';
-import Pokechampions from './Pokechampions'
+/* import Pokechampions from './Pokechampions' */
 import WeirdCalc from './WeirdCalc';
 import PokeQuiz from './PokeQuiz';
 import Portfolio from './Portfolio';
