@@ -36,8 +36,8 @@
 }
 
 #logo:hover {
-    filter: drop-shadow(2px 2px 2px black);
-    -webkit-filter: drop-shadow(2px 2px 2px black);
+    filter: drop-shadow(-2px -2px 2px black);
+    -webkit-filter: drop-shadow(-2px -2px 2px black);
 }
 
 .info_container {
