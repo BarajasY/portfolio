@@ -10,7 +10,8 @@
 }
 
 .stack_content {
-    font-family: 'Source Code Pro';
+    font-family: 'Inter';
+    font-weight: 800;
     text-align: center;
     width: 100%;
     display: flex;

@@ -20,7 +20,7 @@ const Blog = () => {
                     <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .5 }} className="project_info">
                         <AiOutlineClose className="arrow" onClick={() => setOpen(!Open)} />
                         <div className="project_header">
-                            <h1>Blog Site</h1>
+                            <h1>Blog</h1>
                             <img src={blog_page} alt={blog_page} id='screenshot' />
                         </div>
                         <div className="project_description">

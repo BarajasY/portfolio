@@ -19,7 +19,7 @@ const Portfolio = () => {
                     <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .5 }} className="project_info">
                         <AiOutlineClose className="arrow" onClick={() => setOpen(!Open)} />
                         <div className="project_header">
-                            <h1>Personal Portfolio</h1>
+                            <h1>Portfolio</h1>
                             <img src={portfolio_page} alt={portfolio_page} id='screenshot' />
                         </div>
                         <div className="project_description">
