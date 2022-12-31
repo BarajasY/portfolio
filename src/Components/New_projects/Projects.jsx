@@ -10,6 +10,7 @@ import Quiz from './Quiz';
 import WeirdCalc from './WeirdCalc';
 import PokeQuiz from './PokeQuiz';
 import Portfolio from './Portfolio';
+import Acceleracers from './Acceleracers';
 
 const Projects = () => {
 
@@ -29,6 +30,7 @@ const Projects = () => {
                 {/* <Pokechampions /> */}
                 <WeirdCalc />
                 <PokeQuiz />
+                <Acceleracers/>
             </div>
         </div>
     )

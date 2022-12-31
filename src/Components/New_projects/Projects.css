@@ -36,8 +36,9 @@
 }
 
 #logo:hover {
-    filter: drop-shadow(-2px -2px 2px black);
-    -webkit-filter: drop-shadow(-2px -2px 2px black);
+    filter: drop-shadow(2px 2px 10px black);
+    -webkit-filter: drop-shadow(2px 2px 2px black);
+    transform: translateY(-10px);
 }
 
 .info_container {
@@ -64,7 +65,7 @@
     font-family: 'Inter';
     bottom: 0;
     border-radius: 10px;
-    box-shadow: -8px 30px 4px black;
+    box-shadow: -8px 30px 50px black;
 }
 
 .arrow {
@@ -102,12 +103,20 @@
 #screenshot {
     border-radius: 15px;
     width: 30vw;
-    height: 16vw;
+    height: 18vw;
+}
+
+.project_description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .project_description p {
+    width: 80%;
     text-align: justify;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
+    font-weight: 600;
     padding: 20px
 }
 
@@ -131,7 +140,6 @@
 }
 
 .icons:hover {
-    transform: rotate(360deg);
     color: var(--cyan)
 }
 
