@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const Header = () => {
     return (
         <div className="introduction_container">
-            <div className="intro_text">
+            <motion.div className="intro_text" initial={{x: -50, opacity: 0}} whileInView={{x: 0, opacity:1}}>
                 <motion.h1>
                     <motion.span whileHover={{ scale: 1.4}} transition={{
                         default: {
@@ -68,10 +68,10 @@ const Header = () => {
                     }
             }}>R</motion.span>
                 </motion.h1>
-            </div>
-            <div className="intro_description">
-                    <h1>Mexican upcoming software engineer</h1>
-                </div>
+            </motion.div>
+            <motion.div className="intro_description" initial={{x: 50, opacity: 0}} whileInView={{x: 0, opacity:1}}>
+                <h1>Mexican upcoming software engineer</h1>
+            </motion.div>
         </div >
     )
 }

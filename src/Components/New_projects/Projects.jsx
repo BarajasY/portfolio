@@ -11,14 +11,15 @@ import WeirdCalc from './WeirdCalc';
 import PokeQuiz from './PokeQuiz';
 import Portfolio from './Portfolio';
 import Acceleracers from './Acceleracers';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
 
     return (
         <div className="projects_container">
-            <div className="projects_title">
+            <motion.div className="projects_title" initial={{y: 50, opacity: 0}} whileInView={{y:0, opacity:1}}>
                 <h1>Projects</h1>
-            </div>
+            </motion.div>
             <div className="projects_content">
                 <Elantra />
                 <Rick />

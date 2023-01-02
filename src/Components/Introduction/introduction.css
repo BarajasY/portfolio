@@ -2,6 +2,7 @@
     width: 100vw;
     height: 110vh;
     max-width: 100%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,9 +41,7 @@
     border-radius: 15px;
 }
 
-.intro_text h1:hover span {
-    color: white;
-}
+.intro_text h1:hover span {color: white;}
 
 .intro_text h1 span {
     font-size: 10vw;
