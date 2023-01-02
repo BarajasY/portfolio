@@ -12,7 +12,7 @@ const Astrobuyer = () => {
     const [Open, setOpen] = useState(false)
 
     return (
-        <div className="project_content">
+        <motion.div className="project_content" initial={{y:10, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{delay: .16}}>
             <img src={astrobuyer} alt={astrobuyer} onClick={() => setOpen(!Open)} id='logo' />
             <AnimatePresence>
                 {Open
@@ -46,7 +46,7 @@ const Astrobuyer = () => {
                     <></>
                 }
             </AnimatePresence>
-        </div>
+        </motion.div>
     )
 }
 

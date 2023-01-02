@@ -11,12 +11,12 @@ const Acceleracers = () => {
     const [Open, setOpen] = useState(false)
 
     return (
-        <div className="project_content">
+        <motion.div className="project_content" initial={{y:10, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{delay: .1}}>
             <img src={acceleracers_logo} alt={acceleracers_logo} onClick={() => setOpen(!Open)} id='logo' />
             <AnimatePresence>
                 {Open
                     ?
-                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .2 }} className="project_info">
+                    <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .5 }} className="project_info">
                         <AiOutlineClose className="arrow" onClick={() => setOpen(!Open)} />
                         <div className="project_header">
                             <h1>Acceleracers</h1>
@@ -45,7 +45,7 @@ const Acceleracers = () => {
                     <></>
                 }
             </AnimatePresence>
-        </div>
+        </motion.div>
     )
 }
 

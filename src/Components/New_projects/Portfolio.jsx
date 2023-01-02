@@ -11,7 +11,7 @@ const Portfolio = () => {
     const [Open, setOpen] = useState(false)
 
     return (
-        <div className="project_content">
+        <motion.div className="project_content" initial={{y:10, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{delay: .14}}>
             <img src={portfolio} alt={portfolio} onClick={() => setOpen(!Open)} id='logo' />
             <AnimatePresence>
                 {Open
@@ -43,7 +43,7 @@ const Portfolio = () => {
                     <></>
                 }
             </AnimatePresence>
-        </div>
+        </motion.div>
     )
 }
 

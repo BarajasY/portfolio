@@ -12,7 +12,7 @@ const Quiz = () => {
     const [Open, setOpen] = useState(false)
 
     return (
-        <div className="project_content">
+        <motion.div className="project_content" initial={{y:10, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{delay: .17}}>
             <img src={quiz} alt={quiz} onClick={() => setOpen(!Open)} id='logo' />
             <AnimatePresence>
                 {Open
@@ -44,7 +44,7 @@ const Quiz = () => {
                     <></>
                 }
             </AnimatePresence>
-        </div>
+        </motion.div>
     )
 }
 

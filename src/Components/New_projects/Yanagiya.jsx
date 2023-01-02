@@ -12,7 +12,7 @@ const Yanagiya = () => {
     const [Open, setOpen] = useState(false)
 
     return (
-        <div className="project_content">
+        <motion.div className="project_content" initial={{y:10, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{delay: .15}}>
             <img src={yanagiya} alt={yanagiya} onClick={() => setOpen(!Open)} id='logo' />
             <AnimatePresence>
                 {Open
@@ -43,7 +43,7 @@ const Yanagiya = () => {
                     <></>
                 }
             </AnimatePresence>
-        </div>
+        </motion.div>
     )
 }
 

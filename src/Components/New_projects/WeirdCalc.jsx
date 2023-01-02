@@ -11,7 +11,7 @@ const WeirdCalc = () => {
     const [Open, setOpen] = useState(false)
 
     return (
-        <div className="project_content">
+        <motion.div className="project_content" initial={{y:10, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{delay: .18}}>
             <img src={calculators} alt={calculators} onClick={() => setOpen(!Open)} id='logo' />
             <AnimatePresence>
                 {Open
@@ -44,7 +44,7 @@ const WeirdCalc = () => {
                     <></>
                 }
             </AnimatePresence>
-        </div>
+        </motion.div>
     )
 }
 

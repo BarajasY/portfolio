@@ -2,15 +2,11 @@ import React from 'react';
 import './Navbar.css';
 import { motion } from 'framer-motion';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import logo from '../../assets/empty-y.png';
 
 const Navbar = () => {
     return (
         <div className="navbar_container">
             <div className="navbar_content">
-                <div className="logo">
-                    <motion.img animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 1, delay: 1 }} src={logo} alt="My logo" />
-                </div>
                 <div className="test">
                     <motion.span whileHover={{ scale: 1.4}} transition={{
                         default: {

@@ -15,25 +15,10 @@
     height: 70px;
 }
 
-.logo {
-    width: 33%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    margin-left: 1em;
-}
-
-.logo img {
-    width: 70px;
-    height: 70px;
-    position: relative;
-}
-
 .test {
     color: var(--black);
     width: 90%;
     font-family: 'Poppins';
-    font-size: 15px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -66,7 +51,7 @@
     align-items: center;
     font-family: 'Poppins';
     font-weight: 500;
-    font-size: 50px;
+    font-size: 40px;
     transition: .2s;
     position: relative;
 }
