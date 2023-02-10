@@ -1,7 +1,8 @@
 import React from 'react';
 import './Navbar.css';
 import { motion } from 'framer-motion';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import {FaLinkedinIn} from 'react-icons/fa'
+import {FiGithub } from 'react-icons/fi';
 
 const Navbar = () => {
     return (
@@ -20,7 +21,7 @@ const Navbar = () => {
                             restDelta: 0.001
                         }
                      }} className="navbar_text" id="github">
-                        <h1><a href="https://github.com/Kanomb" target="_blank" rel="noreferrer"><AiFillGithub /></a></h1>
+                        <h1><a href="https://github.com/Kanomb" target="_blank" rel="noreferrer"><FiGithub /></a></h1>
                     </motion.span>
                     <motion.span whileHover={{ scale: 1.4}} transition={{
                         default: {
@@ -34,7 +35,7 @@ const Navbar = () => {
                             restDelta: 0.001
                         }
                     }} className="navbar_text" id="linkedin">
-                        <h1><a href="https://www.linkedin.com/in/yahirmb" target="_blank" rel="noreferrer"><AiFillLinkedin /></a></h1>
+                        <h1><a href="https://www.linkedin.com/in/yahirmb" target="_blank" rel="noreferrer"><FaLinkedinIn /></a></h1>
                     </motion.span>
                 </div>
             </div>
