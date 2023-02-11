@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './Projects.css';
-import blog from '../../assets/blog_logo.png';
-import blog_page from '../../assets/blog_page.webp';
+import '../Projects.css';
+import blog from '../../../assets/blog_logo.png';
+import blog_page from '../../../assets/blog_page.webp';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';

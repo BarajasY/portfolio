@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './Projects.css';
-import calculators from '../../assets/calculators_logo.png';
-import weird_calculators from '../../assets/weird_calculator.webp';
+import '../Projects.css';
+import calculators from '../../../assets/calculators_logo.png';
+import weird_calculators from '../../../assets/weird_calculator.webp';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';

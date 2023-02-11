@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './Projects.css';
-import acceleracers_logo from '../../assets/acceleracers_logo.png';
-import acceleracers_page from '../../assets/acceleracers_page.webp';
+import '../Projects.css';
+import acceleracers_logo from '../../../assets/acceleracers_logo.png';
+import acceleracers_page from '../../../assets/acceleracers_page.webp';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';

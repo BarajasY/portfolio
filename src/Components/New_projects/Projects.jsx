@@ -1,37 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Projects.css';
-import Elantra from './Elantra';
-import Rick from './Rick';
-import Blog from './Blog';
-import Yanagiya from './Yanagiya';
-import Astrobuyer from './Astrobuyer';
-import Quiz from './Quiz';
-/* import Pokechampions from './Pokechampions' */
-import WeirdCalc from './WeirdCalc';
-import PokeQuiz from './PokeQuiz';
-import Portfolio from './Portfolio';
-import Acceleracers from './Acceleracers';
+import Elantra from './ProjectsFolder/Elantra';
+import Rick from './ProjectsFolder/Rick';
+import Blog from './ProjectsFolder/Blog';
+import Yanagiya from './ProjectsFolder/Yanagiya';
+import Astrobuyer from './ProjectsFolder/Astrobuyer';
+import Quiz from './ProjectsFolder/Quiz';
+import Pokechampions from './ProjectsFolder/Pokechampions'
+import WeirdCalc from './ProjectsFolder/WeirdCalc';
+import PokeQuiz from './ProjectsFolder/PokeQuiz';
+import Portfolio from './ProjectsFolder/Portfolio';
+import Acceleracers from './ProjectsFolder/Acceleracers';
+import Togenim from './ProjectsFolder/Togenim';
 import { motion } from 'framer-motion';
 
 const Projects = () => {
 
+    const [AllProjects, setAllProjects] = useState(false)
+
     return (
         <div className="projects_container">
             <motion.div className="projects_title" initial={{y: 50, opacity: 0}} whileInView={{y:0, opacity:1}}>
-                <h1>Projects</h1>
+                <h1>Selected Projects</h1>
+                <div className="projects_title_button">
+                    <button onClick={() => setAllProjects(!AllProjects)}>All Projects</button>
+                </div>
             </motion.div>
             <div className="projects_content">
-                <Elantra />
-                <Rick />
-                <Blog />
-                <Portfolio />
-                <Yanagiya />
-                <Astrobuyer />
-                <Quiz />
-                {/* <Pokechampions /> */}
-                <WeirdCalc />
-                <PokeQuiz />
-                <Acceleracers/>
+                {AllProjects 
+                    ? 
+                    <section>
+                        <Pokechampions />
+                        <Rick />
+                        <Blog />
+                        <Portfolio />
+                        <Yanagiya />
+                        <Quiz />
+                        <PokeQuiz />
+                        <WeirdCalc />
+                        <Elantra />
+                        <Astrobuyer />
+                        <Acceleracers/>
+                        <Togenim />
+                    </section>
+                    :
+                    <section>
+                        <Togenim />
+                        <Astrobuyer />
+                        <Acceleracers/>
+                    </section>
+                }
             </div>
         </div>
     )

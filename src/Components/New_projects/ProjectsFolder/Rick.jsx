@@ -1,42 +1,42 @@
 import React, { useState } from 'react';
-import './Projects.css';
-import portfolio from '../../assets/portfolio_logo.png';
-import portfolio_page from '../../assets/portfolio.webp';
+import '../Projects.css';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
+import rick from '../../../assets/rick_logo.png';
+import RAM_API from '../../../assets/RAM_API.webp';
 import { AiOutlineClose } from 'react-icons/ai';
-import { IoLogoJavascript } from 'react-icons/io';
+import { FaReact, FaCss3, FaHtml5 } from 'react-icons/fa';
+import { AiFillApi } from 'react-icons/ai';
 
-const Portfolio = () => {
+const Rick = () => {
     const [Open, setOpen] = useState(false)
 
     return (
-        <motion.div className="project_content" initial={{y:10, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{delay: .14}}>
-            <img src={portfolio} alt={portfolio} onClick={() => setOpen(!Open)} id='logo' />
+        <motion.div className="project_content" initial={{y:10, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{delay: .12}}>
+            <img src={rick} alt={rick} onClick={() => setOpen(!Open)} id='logo' />
             <AnimatePresence>
                 {Open
                     ?
                     <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .5 }} className="project_info">
                         <AiOutlineClose className="arrow" onClick={() => setOpen(!Open)} />
                         <div className="project_header">
-                            <h1>Portfolio</h1>
-                            <img src={portfolio_page} alt={portfolio_page} id='screenshot' />
+                            <h1>API consumption with Rick and Morty</h1>
+                            <img src={RAM_API} alt={RAM_API} id='screenshot' />
                         </div>
                         <div className="project_description">
-                            <p>The website you're in currently!. Made this site to serve as a collection of all the things i've done and also to display my learning progress as a developer.
-                                This project has evolved a lot since i started it.</p>
+                            <p>My first attempt to use an API!. In this case i used the Rick and Morty API. It allows the user to see the characters from the show and an additional description of them.
+                                This project allowed me to better understand how JSX and APIS work.</p>
                         </div>
                         <div className="project_stack">
                             <div className="section">
                                 <FaReact className="icons" />
                                 <FaCss3 className="icons" />
                                 <FaHtml5 className="icons" />
-                                <IoLogoJavascript className="icons" />
+                                <AiFillApi className="icons" />
                             </div>
                         </div>
                         <div className="project_links">
-                            <a href="https://yahirmb-portfolio.netlify.app/" target='_blank' rel='noreferrer'><button>Live</button></a>
-                            <a href="https://github.com/Kanomb/portfolio" target='_blank' rel='noreferrer'><button>Repo</button></a>
+                            <a href="https://rickandmortyapi-test.netlify.app/" target='_blank' rel='noreferrer'><button>Live</button></a>
+                            <a href="https://github.com/Kanomb/api_101" target='_blank' rel='noreferrer'><button>Repo</button></a>
                         </div>
                     </motion.div>
                     :
@@ -47,4 +47,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default Rick
