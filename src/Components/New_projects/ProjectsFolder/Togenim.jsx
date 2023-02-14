@@ -19,12 +19,11 @@ const Togenim = () => {
                     <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .5 }} className="project_info">
                         <AiOutlineClose className="arrow" onClick={() => setOpen(!Open)} />
                         <div className="project_header">
-                            <h1>Acceleracers</h1>
+                            <h1>Togenim</h1>
                             <img src={togenim_page} alt={togenim_page} id='screenshot' />
                         </div>
                         <div className="project_description">
-                            <p>Latest project i've made, a multiple-page website where i described some of the aspects of the Hot Wheels Acceleracers series.
-                                This was my first time ever using Typescript and i must say it is quite easy to handle and the pros are many.
+                            <p>An application written in Typescript with serverless Backend and firebase NOSQL that allows users to browse through various Genshin Impact´s teams. It also contains functionality to search teams by selecting the characters they have.
                             </p>
                         </div>
                         <div className="project_stack">

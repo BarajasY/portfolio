@@ -21,9 +21,9 @@ const Projects = () => {
     return (
         <div className="projects_container">
             <motion.div className="projects_title" initial={{y: 50, opacity: 0}} whileInView={{y:0, opacity:1}}>
-                <h1>Selected Projects</h1>
+                <h1>{AllProjects ? 'All Projects' : 'Selected Projects'}</h1>
                 <div className="projects_title_button">
-                    <button onClick={() => setAllProjects(!AllProjects)}>All Projects</button>
+                    <button onClick={() => setAllProjects(!AllProjects)}>{AllProjects ? 'Selected' : 'All Projects'}</button>
                 </div>
             </motion.div>
             <div className="projects_content">

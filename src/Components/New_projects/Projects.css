@@ -272,12 +272,12 @@
     }
 
     .projects_title h1 {
-        font-size: 7vw;
+        font-size: 10vw;
     }
 
     #logo {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     .projects_content {
@@ -301,6 +301,10 @@
     }
 
     .project_links button {
+        font-size: 4vw;
+    }
+
+    .projects_title_button button {
         font-size: 4vw;
     }
 }
