@@ -48,6 +48,7 @@ const Projects = () => {
                         <Togenim />
                         <Astrobuyer />
                         <Acceleracers/>
+                        <Pokechampions />
                     </section>
                 }
             </div>
