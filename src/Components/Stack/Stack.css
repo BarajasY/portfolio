@@ -20,7 +20,7 @@
 }
 
 .used_tech {
-    font-size: 30px;
+    font-size: 50px;
     color: rgb(28, 155, 126);
     display:flex;
     flex-direction: column;
@@ -32,7 +32,7 @@
     width: 50%;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 60px;
+    gap: 40px;
     align-items: center;
     justify-content: center;
 }
