@@ -43,13 +43,13 @@ const Projects = () => {
                         <Astrobuyer />
                         <Acceleracers/>
                         <Togenim />
+                        <Astrobuyer />
+                        <Pokechampions />
                     </section>
                     :
                     <section>
                         <Togenim />
-                        <Astrobuyer />
                         <Acceleracers/>
-                        <Pokechampions />
                         <ColorManager />
                     </section>
                 }

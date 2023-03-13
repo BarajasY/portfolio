@@ -19,7 +19,7 @@ const ColorManager = () => {
             <motion.div key="project_info" exit={{ x: 2000 }} initial={{ x: 2000 }} animate={{ x: 0 }} transition={{ duration: .5 }} className="project_info">
                 <AiOutlineClose className="arrow" onClick={() => setOpen(!Open)} />
                 <div className="project_header">
-                    <h1>ColorManager</h1>
+                    <h1>ColorManager <span>Not Hosted</span></h1>
                     <img src={ColorManager_page} alt="ColorManager" id='screenshot' />
                 </div>
                 <div className="project_description">
