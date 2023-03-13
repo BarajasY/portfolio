@@ -12,6 +12,7 @@ import PokeQuiz from './ProjectsFolder/PokeQuiz';
 import Portfolio from './ProjectsFolder/Portfolio';
 import Acceleracers from './ProjectsFolder/Acceleracers';
 import Togenim from './ProjectsFolder/Togenim';
+import ColorManager from './ProjectsFolder/ColorManager';
 import { motion } from 'framer-motion';
 
 const Projects = () => {
@@ -49,6 +50,7 @@ const Projects = () => {
                         <Astrobuyer />
                         <Acceleracers/>
                         <Pokechampions />
+                        <ColorManager />
                     </section>
                 }
             </div>
