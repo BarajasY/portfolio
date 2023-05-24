@@ -14,6 +14,7 @@ import Acceleracers from './ProjectsFolder/Acceleracers';
 import Togenim from './ProjectsFolder/Togenim';
 import ColorManager from './ProjectsFolder/ColorManager';
 import { motion } from 'framer-motion';
+import Workaholic from './ProjectsFolder/Workaholic';
 
 const Projects = () => {
 
@@ -51,6 +52,7 @@ const Projects = () => {
                         <Togenim />
                         <Acceleracers/>
                         <ColorManager />
+                        <Workaholic />
                     </section>
                 }
             </div>
